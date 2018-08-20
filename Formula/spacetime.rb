@@ -29,4 +29,9 @@ class Spacetime < Formula
     system ENV.cxx, testpath/"test.cpp", "-I#{include}/Spacetime", "-std=c++11", "-o", "test"
     system "./test"
   end 
+  bottle do
+    root_url "https://qat.pitt.edu/Bottles/spacetime--2.0.1.high_sierra.bottle.tar.gz"
+    sha256 "41f4cc0e346eec5c6ecad5b866563372e1f975c24ebaee7281b9cdbe5c6ac872" => :high_sierra
+  end
+
 end
