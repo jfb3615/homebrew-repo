@@ -30,7 +30,7 @@ class Spacetime < Formula
     system "./test"
   end 
   bottle do
-    root_url "https://qat.pitt.edu/Bottles/spacetime--2.0.1.high_sierra.bottle.tar.gz"
+    root_url "https://qat.pitt.edu/Bottles"
     sha256 "41f4cc0e346eec5c6ecad5b866563372e1f975c24ebaee7281b9cdbe5c6ac872" => :high_sierra
   end
 
