@@ -6,9 +6,9 @@ class Spacetime < Formula
   homepage "qat.pitt.edu"
   url "https://www.qat.pitt.edu/spacetime-2.0.1.tar.gz"
   sha256 "e37a5ede0e0b706cc35baef7bd0b02c2345a5d1e190cb15cf6c063f3c1ae3b60"
-  depends_on 'qt5' => :build 
-  depends_on 'eigen' => :build
-  depends_on 'pkg-config' => :build
+  depends_on 'qt5' 
+  depends_on 'eigen' 
+  depends_on 'pkg-config' 
   needs :cxx11 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel

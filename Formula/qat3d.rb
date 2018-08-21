@@ -5,12 +5,12 @@ class Qat3d < Formula
   sha256 "9541bed6cfe0e546afcf47dc4fe178a36424871f353a20af6272b1bb117d14f4"
   depends_on 'qt5'
   depends_on 'eigen' 
-  depends_on 'gsl' => :build
-  depends_on 'hdf5' => :build
-  depends_on 'pkg-config' => :build
-  depends_on 'openmpi' => :build
-  depends_on 'simage' => :build
-  depends_on 'coin' => :build
+  depends_on 'gsl' 
+  depends_on 'hdf5' 
+  depends_on 'pkg-config' 
+  depends_on 'openmpi' 
+  depends_on 'simage' 
+  depends_on 'coin' 
   needs :cxx11 
   conflicts_with "qat", :because => "qat3d is a superset of qat."
 
