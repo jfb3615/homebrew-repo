@@ -11,4 +11,12 @@ class Coin < Formula
                           "--prefix=#{prefix}"
     system "make", "install" 
   end
+
+  bottle do
+    root_url "https://qat.pitt.edu/Bottles"
+    cellar :any
+    sha256 "54cc704a3ce36fe8c39cb7c7da51c56a95711b74e632d1b5269e0216fe0efde8" => :high_sierra
+  end
+
+
 end
