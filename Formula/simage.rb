@@ -13,4 +13,10 @@ class Simage < Formula
     system "make", "install" # if this fails, try separate make/make install steps
   end
 
+  bottle do
+    root_url "https://qat.pitt.edu/Bottles"
+    cellar :any
+    sha256 "9b64635cb7928ea0cbe77b55bc2fde45330096eb05fc9d65eac20ce6ec3db07b" => :high_sierra
+  end
+
 end
