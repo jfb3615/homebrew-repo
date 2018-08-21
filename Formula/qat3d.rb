@@ -24,4 +24,10 @@ class Qat3d < Formula
   def test 
   bin/"testprogram"
   end   
+
+  bottle do
+    root_url "https://qat.pitt.edu/Bottles"
+    sha256 "7ceae036507ffaab28f8964243313c7777ed24de42e806cf61da2b98bbea1c2f" => :high_sierra
+  end
+
 end
