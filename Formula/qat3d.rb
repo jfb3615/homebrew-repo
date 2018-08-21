@@ -9,8 +9,8 @@ class Qat3d < Formula
   depends_on 'hdf5' 
   depends_on 'pkg-config' 
   depends_on 'openmpi' 
-  depends_on 'simage' 
-  depends_on 'coin' 
+  depends_on 'jfb3615/repo/simage' 
+  depends_on 'jfb3615/repo/coin' 
   needs :cxx11 
   conflicts_with "qat", :because => "qat3d is a superset of qat."
 
