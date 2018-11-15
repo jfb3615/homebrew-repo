@@ -7,23 +7,23 @@ class Vp1lightRoot < Formula
   revision 2
   head "https://github.com/root-project/root.git"
 
-  bottle do
-    sha256 "ca72af676d7c91ce31dcc96d475f3fc5d7653b8412f6e02bdc5e1df58d85ff24" => :mojave
-    sha256 "3ae6464e7850068f4b86bad5abaa521bb5f681c3eb7218bcc3adc43796a72618" => :high_sierra
-    sha256 "d3ef8ca60ceeaf453006b137740274979548b1443ff0d1383450ece038194330" => :sierra
-  end
+  #bottle do
+  #  sha256 "ca72af676d7c91ce31dcc96d475f3fc5d7653b8412f6e02bdc5e1df58d85ff24" => :mojave
+  #  sha256 "3ae6464e7850068f4b86bad5abaa521bb5f681c3eb7218bcc3adc43796a72618" => :high_sierra
+  #  sha256 "d3ef8ca60ceeaf453006b137740274979548b1443ff0d1383450ece038194330" => :sierra
+  #end
 
   # https://github.com/Homebrew/homebrew-core/issues/30726
   # strings libCling.so | grep Xcode:
   #  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1
   #  /Applications/Xcode.app/Contents/Developer
-  pour_bottle? do
-    reason "The bottle hardcodes locations inside Xcode.app"
-    satisfy do
-      MacOS::Xcode.installed? &&
-        MacOS::Xcode.prefix.to_s.include?("/Applications/Xcode.app/")
-    end
-  end
+  #pour_bottle? do
+  #  reason "The bottle hardcodes locations inside Xcode.app"
+  #  satisfy do
+  #    MacOS::Xcode.installed? &&
+  #      MacOS::Xcode.prefix.to_s.include?("/Applications/Xcode.app/")
+  #  end
+  #end
 
   depends_on "cmake" => :build
   depends_on "davix"
