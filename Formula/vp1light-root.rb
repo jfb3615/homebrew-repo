@@ -129,6 +129,22 @@ class Vp1lightRoot < Formula
       chmod 0755, Dir[bin/"*.*sh"]
     end
   end
+  
+  patch :p0, <<~EOS
+    diff --git a/core/macosx/CMakeLists.txt b/core/macosx/CMakeLists.txt
+    index daba0d9..fc74856 100644
+    --- a/core/macosx/CMakeLists.txt
+    +++ b/core/macosx/CMakeLists.txt
+    @@ -16,6 +16,6 @@ if(cxxmodules)
+     endif(cxxmodules)
+ 
+     ROOT_OBJECT_LIBRARY(Macosx ${sources})
+    -set_source_files_properties(${sources} COMPILE_FLAGS "-ObjC++ -std=c++11")
+    +set_source_files_properties(${sources} COMPILE_FLAGS "-ObjC++ -std=c++14")
+ 
+     ROOT_INSTALL_HEADERS()   
+  EOS
+
 
 
   test do
