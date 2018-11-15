@@ -130,7 +130,7 @@ class Vp1lightRoot < Formula
     end
   end
   
-  patch :p0, <<~EOS
+  patch :p1, <<~EOS
     diff --git a/core/macosx/CMakeLists.txt b/core/macosx/CMakeLists.txt
     index daba0d9..fc74856 100644
     --- a/core/macosx/CMakeLists.txt
