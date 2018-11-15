@@ -79,7 +79,7 @@ class Vp1lightRoot < Formula
       -Dimt=ON
       -Dxrootd=ON
       -Dtmva=ON
-      -DCMAKE_CXX_FLAGS="-std=c++14
+      -DCMAKE_CXX_FLAGS=-std=c++14
     ]
 
     if build.with?("python") && build.with?("python@2")
