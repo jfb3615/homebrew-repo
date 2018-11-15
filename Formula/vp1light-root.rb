@@ -46,18 +46,6 @@ class Vp1lightRoot < Formula
   skip_clean "bin"
 
   needs :cxx14
-  patch :p0, <<~EOS
-    --- a/core/macosx/CMakeLists.txt        2018-11-15 07:46:02.000000000 -0500
-    +++ b/core/macosx/CMakeLists.txt        2018-11-15 07:46:26.000000000 -0500
-    @@ -16,6 +16,6 @@
-     endif(cxxmodules)
- 
-     ROOT_OBJECT_LIBRARY(Macosx ${sources})
-    -set_source_files_properties(${sources} COMPILE_FLAGS "-ObjC++ -std=c++11")
-    +set_source_files_properties(${sources} COMPILE_FLAGS "-ObjC++ -std=c++14")
- 
-     ROOT_INSTALL_HEADERS()
-  EOS
 
   def install
     # Work around "error: no member named 'signbit' in the global namespace"
