@@ -46,7 +46,7 @@ class Vp1lightRoot < Formula
   skip_clean "bin"
 
   needs :cxx14
-  patch :p0, <<-EOS.undent
+  patch :p0, <<-EOS
     --- a/core/macosx/CMakeLists.txt        2018-11-15 07:46:02.000000000 -0500
     +++ b/core/macosx/CMakeLists.txt        2018-11-15 07:46:26.000000000 -0500
     @@ -16,6 +16,6 @@
