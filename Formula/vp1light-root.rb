@@ -7,11 +7,12 @@ class Vp1lightRoot < Formula
   revision 2
   head "https://github.com/root-project/root.git"
 
-  #bottle do
-  #  sha256 "ca72af676d7c91ce31dcc96d475f3fc5d7653b8412f6e02bdc5e1df58d85ff24" => :mojave
-  #  sha256 "3ae6464e7850068f4b86bad5abaa521bb5f681c3eb7218bcc3adc43796a72618" => :high_sierra
-  #  sha256 "d3ef8ca60ceeaf453006b137740274979548b1443ff0d1383450ece038194330" => :sierra
-  #end
+
+  bottle do
+    root_url "https://qat.pitt.edu/qat/Bottles/vp1light-root--6.14.04_2.high_sierra.bottle.1.tar.gz"
+    rebuild 1
+    sha256 "f23e48fc10e0e8bb73c861ef7200ef284eda4e82718ff38b893a87d95eb5db36" => :high_sierra
+  end
 
   # https://github.com/Homebrew/homebrew-core/issues/30726
   # strings libCling.so | grep Xcode:
