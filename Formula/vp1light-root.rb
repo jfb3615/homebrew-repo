@@ -9,7 +9,7 @@ class Vp1lightRoot < Formula
 
 
   bottle do
-    root_url "https://qat.pitt.edu/qat/Bottles/vp1light-root--6.14.04_2.high_sierra.bottle.1.tar.gz"
+    root_url "https://qat.pitt.edu/Bottles/vp1light-root--6.14.04_2.high_sierra.bottle.1.tar.gz"
     rebuild 1
     sha256 "f23e48fc10e0e8bb73c861ef7200ef284eda4e82718ff38b893a87d95eb5db36" => :high_sierra
   end
