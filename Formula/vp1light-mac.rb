@@ -11,8 +11,8 @@ class Vp1lightMac < Formula
   depends_on "jfb3615/repo/mcutils"
   depends_on "jfb3615/repo/heppdt"
   def install
-    ENV["ROOTSYS"] = "/usr/local"
-    mkdir "builddir" do
+       ENV["ROOTSYS"] = "/usr/local/root"
+       mkdir "builddir" do
        system "cmake", "../Projects/NewVP1Light", *std_cmake_args
        system "make", "install" 
     end 
