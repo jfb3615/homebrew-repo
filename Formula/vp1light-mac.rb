@@ -15,8 +15,8 @@ class Vp1lightMac < Formula
     system "mkdir build-area"
     system "cd build-area"
     system "pwd"
-    system "cmake", "../build-area/Projects/NewVP1Light", *std_cmake_args
-    system "make", "install" # if this fails, try separate make/make install steps
+    system "cd build-area && cmake", "../build-area/Projects/NewVP1Light", *std_cmake_args
+    system "cd build-area && make", "install" # if this fails, try separate make/make install steps
   end
 
 end
