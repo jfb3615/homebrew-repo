@@ -11,8 +11,6 @@ class Vp1lightMac < Formula
   depends_on "jfb3615/repo/mcutils"
   depends_on "jfb3615/repo/heppdt"
   def install
-    system "ls -l /usr /usr/local/ /usr/local/bin"
-    system "source /usr/local/bin/thisroot.sh"
     system "mkdir build"
     system "cd build"
     system "cmake", "../Projects/NewVP1Light", *std_cmake_args
