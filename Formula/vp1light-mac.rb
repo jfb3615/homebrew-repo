@@ -15,6 +15,7 @@ class Vp1lightMac < Formula
     mkdir "builddir" do
        system "cmake", "../Projects/NewVP1Light", *std_cmake_args
        system "make", "install" 
+    end 
   end
 
 end
