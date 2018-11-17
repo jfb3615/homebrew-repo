@@ -18,5 +18,10 @@ class Vp1lightMac < Formula
        system "make", "install" 
     end 
   end
+  bottle do
+    root_url "https://qat.pitt.edu/Bottles"
+    sha256 "37a31bb41abde5d14cfc3d0a23ebf5bcc2beabcd11a2bceeefc34abbc7d40fcf" => :high_sierra
+  end
+
 
 end
