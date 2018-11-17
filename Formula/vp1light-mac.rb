@@ -11,11 +11,8 @@ class Vp1lightMac < Formula
   depends_on "jfb3615/repo/mcutils"
   depends_on "jfb3615/repo/heppdt"
   def install
-    system "pwd"
-    system "mkdir build-area"
-    system "cd build-area"
-    system "pwd"
-    system "cd build-area && cmake", "../build-area/Projects/NewVP1Light", *std_cmake_args
+    system "which cmake"
+    system "cd build-area && cmake", "../Projects/NewVP1Light", *std_cmake_args
     system "cd build-area && make", "install" # if this fails, try separate make/make install steps
   end
 
