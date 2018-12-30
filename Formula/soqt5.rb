@@ -11,4 +11,9 @@ class Soqt5 < Formula
     system "cd src/Inventor/Qt && qmake PREFIX=#{prefix} LIBS=-L/usr/local/lib QMAKE_STRIP="
     system "cd src/Inventor/Qt && make install"
   end
+  bottle do
+    root_url "https://homebrew.bintray.com/bottles-repo"
+    cellar :any
+    sha256 "9ef0173f3af20bdd052aa1cdf368c65361f99b8f49bc1177b1bd8f7d316b4bf1" => :high_sierra
+  end
 end
