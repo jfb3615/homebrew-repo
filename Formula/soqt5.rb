@@ -8,6 +8,7 @@ class Soqt5 < Formula
 
   def install
     ENV.deparallelize  
+    system "cd src/Inventor/Qt"
     system "pwd"
     system "ls"
     system "qmake PREFIX=#{prefix} LIBS=-L/usr/local/lib QMAKE_STRIP="
