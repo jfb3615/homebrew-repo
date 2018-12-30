@@ -1,7 +1,7 @@
 class Vp1lightMac < Formula
   desc ""
   homepage "http://atlas-vp1.web.cern.ch/atlas-vp1/home/"
-  url "qat.pitt.edu/qat/other-src/vp1light-2.0.tar.gz"
+  url "qat.pitt.edu/other-src/vp1light-2.0.tar.gz"
   sha256 "a619c9eaccc8a4b378ba3dcdc766c10efc38435b666465e68ee74f6b130e1091"
   depends_on "cmake" => :build
   depends_on "jfb3615/repo/vp1light-root"
