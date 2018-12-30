@@ -1,8 +1,9 @@
 class Qat3d < Formula
   desc "The QAT Package for computation in the physical sciences"
   homepage "qat.pitt.edu"
-  url "https://www.qat.pitt.edu/qat-2.0.0.tar.gz"
-  sha256 "9541bed6cfe0e546afcf47dc4fe178a36424871f353a20af6272b1bb117d14f4"
+  url "https://www.qat.pitt.edu/qat-2.0.1.tar.gz"
+  sha256 "9ee5a34f6a72ea296c5c4fab46e3e719ed2b22374c25fab90c9f8d55170312fe"
+  revision 2
   depends_on 'qt5'
   depends_on 'eigen' 
   depends_on 'gsl' 
@@ -27,7 +28,8 @@ class Qat3d < Formula
 
   bottle do
     root_url "https://qat.pitt.edu/Bottles"
-    sha256 "7ceae036507ffaab28f8964243313c7777ed24de42e806cf61da2b98bbea1c2f" => :high_sierra
+    rebuild 1
+    sha256 "8bae9d838c5d6cab31e503641eda8c93346feba397f5c84d6425c1f4cd7b8fe6" => :high_sierra
   end
 
 end
