@@ -43,7 +43,7 @@ class Vp1lightRoot < Formula
   depends_on "xz" # for LZMA
   depends_on "python" => :recommended
   depends_on "python@2" => :optional
-
+  conflicts_with "root", :because => "vp1light-root compiled w c++14 replaces default root"
   skip_clean "bin"
 
   needs :cxx14
