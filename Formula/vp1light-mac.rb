@@ -1,8 +1,8 @@
 class Vp1lightMac < Formula
   desc ""
   homepage "http://atlas-vp1.web.cern.ch/atlas-vp1/home/"
-  url "qat.pitt.edu/other-src/vp1light-1.2.tar.gz"
-  sha256 "0d20e59a348d180f7ed8e86ae43d259b84c954bbce3046183851f8cf7fb8e9bc"
+  url "qat.pitt.edu/other-src/vp1light-2.0.tar.gz"
+  sha256 "a619c9eaccc8a4b378ba3dcdc766c10efc38435b666465e68ee74f6b130e1091"
   depends_on "cmake" => :build
   depends_on "jfb3615/repo/vp1light-root"
   depends_on "jfb3615/repo/qat3d"
@@ -18,9 +18,6 @@ class Vp1lightMac < Formula
        system "make", "install" 
     end 
   end
-  bottle do
-    root_url "https://qat.pitt.edu/Bottles"
-    sha256 "86c1d9c8ecf84ef2548a9d7ed7369c4b6cfdae528ff2ae406678a8cfcad0c3b1" => :high_sierra
-  end
+ 
 
 end
