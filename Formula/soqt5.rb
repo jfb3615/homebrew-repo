@@ -12,7 +12,7 @@ class Soqt5 < Formula
     system "cd src/Inventor/Qt && make install"
   end
   bottle do
-    root_url "https://homebrew.bintray.com/bottles-repo"
+    root_url "https://qat.pitt.edu/Bottles"
     cellar :any
     sha256 "9ef0173f3af20bdd052aa1cdf368c65361f99b8f49bc1177b1bd8f7d316b4bf1" => :high_sierra
   end
