@@ -10,7 +10,7 @@ class Vp1lightRoot < Formula
 
 
 
-#  depends_on "cmake" => :build
+  depends_on "cmake" => :build
   depends_on "davix"
   depends_on "fftw"
   depends_on "gcc" # for gfortran
