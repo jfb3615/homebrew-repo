@@ -49,7 +49,7 @@ class Vp1lightRoot < Formula
       -Droofit=ON
       -Dssl=ON
       -Dxrootd=ON
-      -DC++14=ON
+      -Dcxx14=ON
     ]
 
     if build.with?("python") && build.with?("python@2")
