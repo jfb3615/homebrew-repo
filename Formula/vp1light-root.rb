@@ -1,4 +1,4 @@
-class VP1LightRoot < Formula
+class VP1lightRoot < Formula
   desc "Object oriented framework for large scale data analysis"
   homepage "https://root.cern.ch"
   url "https://root.cern.ch/download/root_v6.12.06.source.tar.gz"
