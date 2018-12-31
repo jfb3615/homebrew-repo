@@ -3,7 +3,7 @@ class Vp1lightRoot < Formula
   homepage "https://root.cern.ch/"
   url "https://root.cern.ch/download/root_v6.12.06.source.tar.gz"
   version "6.12.06"
-  sha256 "a0ecc8d775d8d812dacbcd9ccf08f1162bd7f0ea3a34a449ce3f86cd3a52b75a"
+  sha256 "aedcfd2257806e425b9f61b483e25ba600eb0ea606e21262eafaa9dc745aa794"
   revision 2
   head "https://github.com/root-project/root.git"
 
