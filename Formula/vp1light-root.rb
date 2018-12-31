@@ -17,8 +17,7 @@ class Vp1lightRoot < Formula
   depends_on "pcre"
   depends_on "xrootd"
   depends_on "xz" # For LZMA.
-  depends_on "python" => :recommended
-  depends_on "python@2" => :optional
+  
 
   needs :cxx14
 
@@ -50,6 +49,7 @@ class Vp1lightRoot < Formula
       -Dssl=ON
       -Dxrootd=ON
       -Ddavix=OFF
+      -Dpython=OFF
       -Dcxx14=ON
     ]
 
