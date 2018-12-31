@@ -58,7 +58,9 @@ class Vp1lightRoot < Formula
     #  -Dxrootd=ON
     #  -Dtmva=ON
     #  -Dcxx14=ON
-    
+    ENV["ROOTSYS"]    = "/usr/local"
+    ENV["LIBPATH"]    = "./lib:/usr/local/lib"
+    ENV["SHLIB_PATH"] = "./lib:/usr/local/lib"
     system "./configure --disable-astiff --disable-bonjour --disable-builtin_afterimage --disable-builtin_unuran --disable-builtin_llvm --disable-explicitlink --disable-gviz  --disable-memstat --disable-pgsql --disable-pythia8 --disable-python --disable-shadowpw  --disable-sqlite --disable-ssl --disable-tmva  --enable-cxx14 --enable-gsl-shared --enable-roofit --prefix=/usr/local"
     system "make"
     system "make", "install" 
