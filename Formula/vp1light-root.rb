@@ -23,7 +23,7 @@ class Vp1lightRoot < Formula
 
   skip_clean "bin"
   bottle do
-    root_url "https://qat.pitt.edu/other-src"
+    root_url "https://qat.pitt.edu/Bottles"
     sha256 "e3e3cac43cc421c95fa0a32acb44b781d43edeabde205501af97ae1c07198276" => :high_sierra
   end
 
