@@ -8,11 +8,7 @@ class Vp1lightRoot < Formula
   head "https://github.com/root-project/root.git"
 
 
-  bottle do
-    root_url "https://qat.pitt.edu/Bottles"
-    rebuild 1
-    sha256 "f23e48fc10e0e8bb73c861ef7200ef284eda4e82718ff38b893a87d95eb5db36" => :high_sierra
-  end
+ 
 
   # https://github.com/Homebrew/homebrew-core/issues/30726
   # strings libCling.so | grep Xcode:
