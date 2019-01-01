@@ -22,6 +22,10 @@ class Vp1lightRoot < Formula
   needs :cxx14
 
   skip_clean "bin"
+  bottle do
+    root_url "https://qat.pitt.edu/other-src"
+    sha256 "e3e3cac43cc421c95fa0a32acb44b781d43edeabde205501af97ae1c07198276" => :high_sierra
+  end
 
   def install
     # Work around "error: no member named 'signbit' in the global namespace"
