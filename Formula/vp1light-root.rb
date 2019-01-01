@@ -1,31 +1,52 @@
 class Vp1lightRoot < Formula
   desc "Object oriented framework for large scale data analysis"
-  homepage "https://root.cern.ch"
-  url "https://root.cern.ch/download/root_v6.12.06.source.tar.gz"
-  version "6.12.06"
-  sha256 "aedcfd2257806e425b9f61b483e25ba600eb0ea606e21262eafaa9dc745aa794"
-  revision 1
-  head "http://root.cern.ch/git/root.git"
+  homepage "https://root.cern.ch/"
+  url "https://root.cern.ch/download/root_v6.14.04.source.tar.gz"
+  version "6.14.04"
+  sha256 "463ec20692332a422cfb5f38c78bedab1c40ab4d81be18e99b50cf9f53f596cf"
+  revision 2
+  head "https://github.com/root-project/root.git"
 
 
-  depends_on "cmake" => :build
-  depends_on "fftw"
-  depends_on "gcc" # for gfortran.
-  depends_on "graphviz"
-  depends_on "gsl"
-  depends_on "openssl"
-  depends_on "pcre"
-  depends_on "xrootd"
-  depends_on "xz" # For LZMA.
-  
-
-  needs :cxx14
-
-  skip_clean "bin"
   bottle do
     root_url "https://qat.pitt.edu/Bottles"
-    sha256 "e3e3cac43cc421c95fa0a32acb44b781d43edeabde205501af97ae1c07198276" => :high_sierra
+    rebuild 1
+    sha256 "f23e48fc10e0e8bb73c861ef7200ef284eda4e82718ff38b893a87d95eb5db36" => :high_sierra
   end
+
+  # https://github.com/Homebrew/homebrew-core/issues/30726
+  # strings libCling.so | grep Xcode:
+  #  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1
+  #  /Applications/Xcode.app/Contents/Developer
+  #pour_bottle? do
+  #  reason "The bottle hardcodes locations inside Xcode.app"
+  #  satisfy do
+  #    MacOS::Xcode.installed? &&
+  #      MacOS::Xcode.prefix.to_s.include?("/Applications/Xcode.app/")
+  #  end
+  #end
+
+  depends_on "cmake" => :build
+  depends_on "davix"
+  depends_on "fftw"
+  depends_on "gcc" # for gfortran
+  depends_on "graphviz"
+  depends_on "gsl"
+  # Temporarily depend on Homebrew libxml2 to work around a brew issue:
+  # https://github.com/Homebrew/brew/issues/5068
+  depends_on "libxml2" if MacOS.version >= :mojave
+  depends_on "lz4"
+  depends_on "openssl"
+  depends_on "pcre"
+  depends_on "tbb"
+  depends_on "xrootd"
+  depends_on "xz" # for LZMA
+  depends_on "python" => :recommended
+  depends_on "python@2" => :optional
+
+  skip_clean "bin"
+
+  needs :cxx14
 
   def install
     # Work around "error: no member named 'signbit' in the global namespace"
@@ -42,18 +63,23 @@ class Vp1lightRoot < Formula
     args = std_cmake_args + %W[
       -Dgnuinstall=ON
       -DCMAKE_INSTALL_ELISPDIR=#{elisp}
+      -DCLING_CXX_PATH=clang++
       -Dbuiltin_freetype=ON
+      -Dbuiltin_cfitsio=OFF
+      -Ddavix=ON
+      -Dfitsio=OFF
       -Dfftw3=ON
       -Dfortran=ON
       -Dgdml=ON
       -Dmathmore=ON
       -Dminuit2=ON
       -Dmysql=OFF
+      -Dpgsql=OFF
       -Droofit=ON
       -Dssl=ON
+      -Dimt=ON
       -Dxrootd=ON
-      -Ddavix=OFF
-      -Dpython=OFF
+      -Dtmva=ON
       -Dcxx14=ON
     ]
 
@@ -105,22 +131,10 @@ class Vp1lightRoot < Formula
       chmod 0755, Dir[bin/"*.*sh"]
     end
   end
+  
+ 
 
-  def caveats; <<~EOS
-    Because ROOT depends on several installation-dependent
-    environment variables to function properly, you should
-    add the following commands to your shell initialization
-    script (.bashrc/.profile/etc.), or call them directly
-    before using ROOT.
 
-    For bash users:
-      . #{HOMEBREW_PREFIX}/bin/thisroot.sh
-    For zsh users:
-      pushd #{HOMEBREW_PREFIX} >/dev/null; . bin/thisroot.sh; popd >/dev/null
-    For csh/tcsh users:
-      source #{HOMEBREW_PREFIX}/bin/thisroot.csh
-    EOS
-  end
 
   test do
     (testpath/"test.C").write <<~EOS
@@ -142,3 +156,4 @@ class Vp1lightRoot < Formula
     end
   end
 end
+
