@@ -17,7 +17,7 @@ class Vp1lightMac < Formula
        ENV.deparallelize  
        ENV["ROOTSYS"] = "/usr/local"
        mkdir "builddir" do
-       system "cmake", "../Projects/NewVP1Light -DCMAKE_CXXFLAGS=-std=c++14 ", *std_cmake_args 
+       system "cmake", "../Projects/NewVP1Light", "-DCMAKE_CXXFLAGS=-std=c++14", *std_cmake_args 
        system "make", "install" 
     end 
   end
