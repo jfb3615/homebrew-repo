@@ -14,6 +14,7 @@ class Vp1lightMac < Formula
   depends_on "jfb3615/repo/heppdt"
   depends_on "boost"
   depends_on "clhep"
+  depends_on "eigen"
   def install
        ENV.deparallelize  
        ENV["ROOTSYS"]    = "/usr/local"
