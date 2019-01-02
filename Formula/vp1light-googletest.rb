@@ -11,4 +11,9 @@ class Vp1lightGoogletest < Formula
     system "cmake", "CMakeLists.txt", *std_cmake_args
     system "make", "install" 
   end
+  bottle do
+    cellar :any_skip_relocation
+    sha256 "3d414b2ea3fd25c6c2f16746d39906251a99bd0fc8e93d481feda90dfe766799" => :mojave
+  end
+
 end
