@@ -16,6 +16,8 @@ class Simage < Formula
   bottle do
     root_url "https://qat.pitt.edu/Bottles"
     cellar :any
+    rebuild 1
+    sha256 "79a42e90c3360da53b6fc0eeb1f2ac48d03a37b87b156653568b40463938632e" => :mojave
     sha256 "9b64635cb7928ea0cbe77b55bc2fde45330096eb05fc9d65eac20ce6ec3db07b" => :high_sierra
   end
 
