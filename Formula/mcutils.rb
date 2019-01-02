@@ -7,4 +7,10 @@ class Mcutils < Formula
     ENV.deparallelize  # if your formula fails when building in parallel
     system "make install PREFIX=#{prefix}"
   end
+  bottle do
+    root_url "https://qat.pitt.edu/Bottles"
+    cellar :any_skip_relocation
+    sha256 "3b92f8851a3e35238c6422884d0995be1b2707d9345203b1fecff512a9e30f66" => :mojave
+  end
+
 end
