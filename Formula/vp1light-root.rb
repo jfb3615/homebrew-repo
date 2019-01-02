@@ -6,10 +6,16 @@ class Vp1lightRoot < Formula
   sha256 "0fb943b61396f282b289e35c455a9ab60126229be1bd3f04a8f00b37c13ab432"
   head "https://github.com/root-project/root.git"
 
+  
+  bottle do
+    root_url "https://qat.pitt.edu/Bottles"
+    sha256 "080a1335a078898e3202ac997a532a3dfa3724e8e34c10633fccb0500126bfae" => :mojave
+  end
   # https://github.com/Homebrew/homebrew-core/issues/30726
   # strings libCling.so | grep Xcode:
   #  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1
   #  /Applications/Xcode.app/Contents/Developer
+  
   pour_bottle? do
     reason "The bottle hardcodes locations inside Xcode.app"
     satisfy do
