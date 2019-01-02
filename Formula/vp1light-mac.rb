@@ -2,7 +2,7 @@ class Vp1lightMac < Formula
   desc ""
   homepage "http://atlas-vp1.web.cern.ch/atlas-vp1/home/"
   url "qat.pitt.edu/other-src/vp1light-2.0.tar.gz"
-  sha256 "58f091a06187c4db1f264a04c9f7a72a49977b7410aa70b0327271ef02a77103"
+  sha256 "82a8fe9250e6cfe8a129fe53740a3c87c09d73358f8a98169e8cb4d1144554d2"
   depends_on "cmake" => :build
   depends_on "jfb3615/repo/vp1light-root"
   depends_on "jfb3615/repo/coin"
@@ -16,7 +16,9 @@ class Vp1lightMac < Formula
   depends_on "clhep"
   def install
        ENV.deparallelize  
-       ENV["ROOTSYS"] = "/usr/local"
+       ENV["ROOTSYS"]    = "/usr/local"
+       ENV["LIBPATH"]    = "/usr/local/lib/root"
+       ENV["SHLIB_PATH"] = "/usr/local/lib/root"
        mkdir "builddir" do
        system "cmake", "../Projects/NewVP1Light", "-DCMAKE_CXX_FLAGS=-std=c++14", *std_cmake_args 
        system "make", "install" 
