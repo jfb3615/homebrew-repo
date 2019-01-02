@@ -14,6 +14,8 @@ class Soqt5 < Formula
   bottle do
     root_url "https://qat.pitt.edu/Bottles"
     cellar :any
+    rebuild 1
+    sha256 "341eee2bcec35b694d1593cd6cfb47b763658168fc46140bfd37cbbe73423b20" => :mojave
     sha256 "9ef0173f3af20bdd052aa1cdf368c65361f99b8f49bc1177b1bd8f7d316b4bf1" => :high_sierra
   end
 end
