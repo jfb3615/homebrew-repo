@@ -12,6 +12,7 @@ class Vp1lightMac < Formula
   depends_on "jfb3615/repo/heputils"
   depends_on "jfb3615/repo/mcutils"
   depends_on "jfb3615/repo/heppdt"
+  depends_on "boost"
   depends_on "clhep"
   def install
        ENV.deparallelize  
