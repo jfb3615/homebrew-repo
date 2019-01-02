@@ -17,6 +17,8 @@ class Heppdt < Formula
   bottle do
     root_url "https://qat.pitt.edu/Bottles"
     cellar :any
+    rebuild 1
     sha256 "7c0d9e66ef0c9f86943c9208b0ff18a274e297707053649ba2007f3774e477fc" => :high_sierra
+    sha256 "51496cc771d718a12564e7385bba22b4d7ebeebc2295a065df6bfffb3c70a15d" => :mojave
   end
 end
