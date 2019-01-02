@@ -7,5 +7,9 @@ class Heputils < Formula
   def install
     system "make install PREFIX=#{prefix}"
   end
-
+  bottle do
+    root_url "https://qat.pitt.edu/Bottles"
+    cellar :any_skip_relocation
+    sha256 "99dbcac39033a8d45201e731dc7dfa90c8ea860b95099baca58694d083cb7f01" => :mojave
+  end
 end
