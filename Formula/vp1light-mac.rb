@@ -29,6 +29,8 @@ class Vp1lightMac < Formula
     root_url "https://qat.pitt.edu/Bottles"
     cellar :any
     sha256 "39ddf150d9c88e5a254cc1b84dbd02719a39ec1af0eef8a2425ada9fdf8f5281" => :mojave
+    rebuild 1
+    sha256 "9272eb95e7c1834f9f5a80efa3bcc97b9f47abf729ced0612584e5f9e5fc90cd" => :high_sierra
   end
 
 
