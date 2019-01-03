@@ -25,6 +25,11 @@ class Vp1lightMac < Formula
        system "make", "install" 
     end 
   end
- 
+  bottle do
+    root_url "https://qat.pitt.edu/Bottles"
+    cellar :any
+    sha256 "39ddf150d9c88e5a254cc1b84dbd02719a39ec1af0eef8a2425ada9fdf8f5281" => :mojave
+  end
+
 
 end
