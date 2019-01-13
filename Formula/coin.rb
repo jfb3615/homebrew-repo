@@ -15,8 +15,8 @@ class Coin < Formula
   bottle do
     root_url "https://qat.pitt.edu/Bottles"
     cellar :any
-    rebuild 1
-    sha256 "f0242e99ac799b6661eed2773bb9d5f8096b09383e0be150e97222036108dca2" => :mojave
+    rebuild 2
+    sha256 "67147081934ff71987497d36c147e10a137c92635f55e019a81473275e5e33c7" => :mojave
     sha256 "54cc704a3ce36fe8c39cb7c7da51c56a95711b74e632d1b5269e0216fe0efde8" => :high_sierra
   end
 
