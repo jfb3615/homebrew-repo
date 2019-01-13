@@ -32,6 +32,8 @@ class Spacetime < Formula
   bottle do
     root_url "https://qat.pitt.edu/Bottles"
     sha256 "41f4cc0e346eec5c6ecad5b866563372e1f975c24ebaee7281b9cdbe5c6ac872" => :high_sierra
+    rebuild 1
+    sha256 "ebd0ccc306df4b29e7c96504c226f9f4a338269e3ff821a04b3c02a4af1e27bc" => :mojave
   end
 
 end
