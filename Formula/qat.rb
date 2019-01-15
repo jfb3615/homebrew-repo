@@ -29,7 +29,6 @@ class Qat < Formula
     cellar :any
     rebuild 2
     sha256 "3618ec5fb42a91bba92dc60bf424b3568049dcb31c35372319dacf6ea4e6103d" => :high_sierra
-    rebuild 1
     sha256 "c3f694a9f71f916b7874e0f65c4b2b12a10465605f25e5062d40bc25f3c84380" => :mojave
   end
 end
