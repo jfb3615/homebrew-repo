@@ -28,10 +28,11 @@ class Qat3d < Formula
 
   bottle do
     root_url "https://qat.pitt.edu/qat/Bottles"
-    rebuild 1
-    sha256 "8bae9d838c5d6cab31e503641eda8c93346feba397f5c84d6425c1f4cd7b8fe6" => :high_sierra
     rebuild 2
     sha256 "3a8c1e2d835438dd1d500a99f2b1692bbed85706210ee0fb646bdaaf14551390" => :mojave
+    rebuild 3
+    sha256 "553dcbc1af009ca737a9ff187fa581e5e3b2a5b44cbb06c444e0127a0517b0fd" => :high_sierra
+   
   end
 
 end
