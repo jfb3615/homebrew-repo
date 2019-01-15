@@ -27,7 +27,7 @@ class Qat3d < Formula
   end   
 
   bottle do
-    root_url "https://qat.pitt.edu/qat/Bottles"
+    root_url "https://qat.pitt.edu/Bottles"
     rebuild 2
     sha256 "3a8c1e2d835438dd1d500a99f2b1692bbed85706210ee0fb646bdaaf14551390" => :mojave
     rebuild 3
