@@ -4,9 +4,9 @@ class SoqtBb < Formula
   url "https://qat.pitt.edu/soqt-bb-1.0.tar.gz"
   sha256 "19ccdadfbf3b5deda0b96d00ffc47d22ff3d6a82107e3cc010dc0d55e1fd3739"
   depends_on "cmake" => :build
-  depends_on "coin-bb" => :build
   depends_on "doxygen" => "build"
   depends_on "qt5"
+  depends_on "jfb3615/repo/coin-bb" => :build
   def install
     mkdir "builddir" do
       system "cmake", "..", "-DCMAKE_CXX_FLAGS=-std=c++14", *std_cmake_args
