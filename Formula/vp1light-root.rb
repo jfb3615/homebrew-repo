@@ -45,7 +45,7 @@ class Vp1lightRoot < Formula
 
   skip_clean "bin"
 
-  needs :cxx14
+  #needs :cxx14
 
   def install
     # Work around "error: no member named 'signbit' in the global namespace"
