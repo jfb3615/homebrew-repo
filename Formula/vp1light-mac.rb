@@ -32,7 +32,5 @@ class Vp1lightMac < Formula
     sha256 "fc1147d9aef47795a1f42e1db6da3cd1c0354a3c80d97cbb9309d94904ae5195" => :high_sierra
   end
 
-  end
-
 
 end
