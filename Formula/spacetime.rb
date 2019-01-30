@@ -9,7 +9,7 @@ class Spacetime < Formula
   depends_on 'qt5' 
   depends_on 'eigen' 
   depends_on 'pkg-config' 
-  needs :cxx11 
+  # This line caused a complaint.  No longer needed?  :-->.   needs :cxx11 
   def install
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
