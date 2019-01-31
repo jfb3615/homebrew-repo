@@ -18,13 +18,13 @@ class Vp1lightRoot < Formula
   #  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1
   #  /Applications/Xcode.app/Contents/Developer
   
-  pour_bottle? do
-    reason "The bottle hardcodes locations inside Xcode.app"
-    satisfy do
-      MacOS::Xcode.installed? &&
-        MacOS::Xcode.prefix.to_s.include?("/Applications/Xcode.app/")
-    end
-  end
+  #pour_bottle? do
+   # reason "The bottle hardcodes locations inside Xcode.app"
+   # satisfy do
+   #   MacOS::Xcode.installed? &&
+   #     MacOS::Xcode.prefix.to_s.include?("/Applications/Xcode.app/")
+   # end
+  #end
 
   depends_on "cmake" => :build
   depends_on "davix"
