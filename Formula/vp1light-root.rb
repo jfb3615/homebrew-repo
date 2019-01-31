@@ -9,7 +9,7 @@ class Vp1lightRoot < Formula
   
   bottle do
     root_url "https://qat.pitt.edu/Bottles"
-    sha256 "080a1335a078898e3202ac997a532a3dfa3724e8e34c10633fccb0500126bfae" => :mojave
+    sha256 "0ed9ac289f849d81fb08c4687ea89436ab3d7ac1e5989a8b78cad460df036ef1" => :mojave
     rebuild 1
     sha256 "7591e6a94a7bd006fc27baee8bc45857a9298a480633da45d4239902b8edfec0" => :high_sierra
   end
