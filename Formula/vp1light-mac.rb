@@ -20,6 +20,7 @@ class Vp1lightMac < Formula
        ENV["ROOTSYS"]    = "/usr/local"
        ENV["LIBPATH"]    = "/usr/local/lib/root"
        ENV["SHLIB_PATH"] = "/usr/local/lib/root"
+       ENV["HOMEBREW_CC"] = "c++"
        mkdir "builddir" do
        system "cmake", "../Projects/NewVP1Light", "-DCMAKE_CXX_COMPILER=c++", *std_cmake_args 
        system "make", "install" 
