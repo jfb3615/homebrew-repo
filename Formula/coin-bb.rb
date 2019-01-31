@@ -16,6 +16,9 @@ class CoinBb < Formula
     root_url "https://qat.pitt.edu/Bottles"
     cellar :any
     sha256 "b418e0593be09c6a9bcbe1ddd924f318870f1fd6f2303f32481ef2d322ce9087" => :high_sierra
+    rebuild 1
+    sha256 "4fcfebd03208cfe804bf3b2ae2a7a41c729d6f9af82f786d8b4fb687c561e1bc" => :mojave
+
   end
 
 end
