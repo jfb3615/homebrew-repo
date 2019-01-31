@@ -22,7 +22,7 @@ class Vp1lightMac < Formula
        ENV["SHLIB_PATH"] = "/usr/local/lib/root"
        mkdir "builddir" do
        system "echo $PATH "
-       system "cmake", "../Projects/NewVP1Light", *std_cmake_args 
+       system "cmake", "../Projects/NewVP1Light", "-DCMAKE_CXX_COMPILER=/usr/bin/clang++", *std_cmake_args 
        system "make", "install" 
     end 
   end
