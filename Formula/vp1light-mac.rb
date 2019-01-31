@@ -16,6 +16,7 @@ class Vp1lightMac < Formula
   depends_on "clhep"
   depends_on "eigen"
   def install
+       env: std
        ENV.deparallelize  
        ENV["ROOTSYS"]    = "/usr/local"
        ENV["LIBPATH"]    = "/usr/local/lib/root"
