@@ -42,6 +42,7 @@ class Vp1lightRoot < Formula
   depends_on "tbb"
   depends_on "xrootd"
   depends_on "xz" # for LZMA
+  depends_on "eigen"
 
   skip_clean "bin"
 
