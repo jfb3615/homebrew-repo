@@ -1,6 +1,6 @@
 class SimageBb < Formula
   desc "The simage library for texture mapping with Coin"
-  homepage "https://bitbucket.org/Coin3D"
+  homepage "https://coin3d.github.io"
   url "https://qat.pitt.edu/simage-simage-1.8.0.tar.gz"
   sha256 "e91f747f812eca246f000e1baa58364bf1534cc661ce564faaf3e58c5aff375d"
   depends_on "cmake" => :build
