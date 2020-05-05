@@ -2,7 +2,7 @@ class SimageBb < Formula
   desc "The simage library for texture mapping with Coin"
   homepage "https://coin3d.github.io"
   url "simage-master-5May2020-00.tar.gz"
-  sha256 "57694751ffb5d0f1e0f5fde6a84129c3c7cdec3378be2122f6ee39566a03c8ba"
+  sha256 "a2b5d79a2e58ba2f9ba23ae0b4ed8ced0b01fc848d99e89697db17903b33a663"
   depends_on "cmake" => :build
   depends_on "doxygen" => :build
   depends_on "libquicktime"
