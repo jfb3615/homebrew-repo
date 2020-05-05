@@ -5,6 +5,8 @@ class SimageBb < Formula
   sha256 "410ba7bf3a06c275b368940d23cb8d8ef891e2064758e5a0705ad2554019dd88"
   depends_on "cmake" => :build
   depends_on "doxygen" => :build
+  depends_on "libquicktime"
+  depends_on "jpeg"
   
   def install
     mkdir "builddir" do
