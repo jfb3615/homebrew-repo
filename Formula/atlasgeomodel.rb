@@ -11,5 +11,7 @@ class Atlasgeomodel < Formula
   depends_on "geomodeltools"
   depends_on "atlasgeometryfiles"
   depends_on "handsonplugins"
-
+  def install 
+    system "cat README"
+  end
 end
