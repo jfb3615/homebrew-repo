@@ -11,7 +11,6 @@ class Atlasgeometryfiles < Formula
 
   # DEPENDENCIES
   depends_on "cmake" => :build
-  depends_on "db-browser-for-sqlite"
   
   # INSTALLATION INSTRUCTIONS
   def install
