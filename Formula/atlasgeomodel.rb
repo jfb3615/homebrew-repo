@@ -3,7 +3,7 @@
 class Atlasgeomodel < Formula
   desc "Meta-package including gmex and some sample inputs for ATLAS"
   homepage "https://gitlab.cern.ch/GeoModelATLAS/geometry-data"
-  url "https://qat.pitt.edu/atlasgeomodel-1.0.tar.gz"
+  url "https://qat.pitt.edu/atlasgeomodel-0.0.tar.gz"
 
   # DEPENDENCIES
   depends_on "cmake" => :build
