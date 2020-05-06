@@ -15,6 +15,7 @@ class Geomodeltools < Formula
   depends_on "nlohmann-json"
   depends_on "geomodelcore"
   depends_on "geomodelio"
+  depends_on "xerces-c"
   
   # INSTALLATION INSTRUCTIONS
   def install
