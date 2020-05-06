@@ -6,7 +6,7 @@ class Geomodeltools < Formula
 
   # SOURCES
   head do
-    url "https://gitlab.cern.ch/GeoModelDev/GeoModelIO.git"
+    url "https://gitlab.cern.ch/GeoModelDev/GeoModelTools.git"
   end
 
   # DEPENDENCIES
@@ -15,6 +15,7 @@ class Geomodeltools < Formula
   depends_on "nlohmann-json"
   depends_on "geomodelcore"
   depends_on "geomodelio"
+  depends_on "xerces-c"
   
   # INSTALLATION INSTRUCTIONS
   def install
