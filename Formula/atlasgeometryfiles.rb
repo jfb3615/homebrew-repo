@@ -15,8 +15,8 @@ class Atlasgeometryfiles < Formula
   # INSTALLATION INSTRUCTIONS
   def install
     system "mkdir -p #{prefix}/share/ATLASGeoModel/"
-    system "cp geometry  #{prefix}/share/ATLASGeoModel"
-    system "cp materials #{prefix}/share/ATLASGeoModel"
+    system "cp -R geometry  #{prefix}/share/ATLASGeoModel"
+    system "cp -R materials #{prefix}/share/ATLASGeoModel"
   end
 
 end
