@@ -12,6 +12,6 @@ class Atlasgeomodel < Formula
   depends_on "atlasgeometryfiles"
   depends_on "handsonplugins"
   def install 
-    system "cat README"
+    system "echo Meta-package, no files installed."
   end
 end
