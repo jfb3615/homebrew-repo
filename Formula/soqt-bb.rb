@@ -8,13 +8,10 @@ class SoqtBb < Formula
   depends_on "qt5"
   depends_on "jfb3615/repo/coin-bb" 
   depends_on "jfb3615/repo/simage-bb"
-  def install
+   def install
     mkdir "builddir" do
       system "cmake", "..", "-DCMAKE_CXX_FLAGS=-std=c++14", *std_cmake_args
-      system "make"
-      #     system "mkdir -p #{prefix}/lib/pkgconfig"
-      #     system "cp src/SoQt.pc #{prefix}/lib/pkgconfig"
-      system "make",      "install"
+      system "make",      "install" 
     end
   end
 end
