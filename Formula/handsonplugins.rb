@@ -1,6 +1,6 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://www.rubydoc.info/github/Homebrew/brew/master/Formula
-class Geomodeltools < Formula
+class Handsonplugins < Formula
   desc "Some very simple plugins to exercise the plugins methods"
   homepage "https://gitlab.cern.ch/GeoModelATLAS/HandsOnPlugins"
 
