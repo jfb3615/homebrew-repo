@@ -6,7 +6,7 @@ class Geomodeltools < Formula
 
   # SOURCES
   head do
-    url "https://gitlab.cern.ch/GeoModelDev/GeoModelIO.git"
+    url "https://gitlab.cern.ch/GeoModelDev/GeoModelTools.git"
   end
 
   # DEPENDENCIES
