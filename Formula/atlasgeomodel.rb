@@ -12,6 +12,8 @@ class Atlasgeomodel < Formula
   depends_on "atlasgeometryfiles"
   depends_on "handsonplugins"
   def install 
-    system "echo AtlasGeoModel installed >>  /usr/local/share/README"
+    system "mkdir -p /usr/local/share"
+    system "mkdir -p /usr/local/share/ATLASGeoModel"
+    system "date >  /usr/local/share/ATLASGeoModel/install.txt"
   end
 end
