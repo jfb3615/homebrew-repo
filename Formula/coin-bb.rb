@@ -5,6 +5,7 @@ class CoinBb < Formula
   sha256 "e5b430a000d549cf6e1e7a10b2254e2042b5f75a3ba03451febeefc29f69acff"
   depends_on "cmake" => :build
   depends_on "doxygen" => :build
+  depends_on "boost"
   def install
     mkdir "builddir" do
       system "cmake", "..", "-DCMAKE_CXX_FLAGS=-std=c++14", *std_cmake_args
