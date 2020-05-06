@@ -19,6 +19,7 @@ class Geomodelvisualization < Formula
   depends_on "soqt-bb"
   depends_on "geomodelcore"
   depends_on "geomodelio"
+  depends_on "nlohmann/json" 
 
   # INSTALLATION INSTRUCTIONS
   def install
