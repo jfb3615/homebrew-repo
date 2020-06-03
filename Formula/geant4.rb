@@ -12,7 +12,7 @@ class Geant4 < Formula
      system "make",      "install"
     end
     def postinstall
-     system "geant4-config --install-datasets"
+     system "echo geant4-config --install-datasets"
     end
    end
 end
