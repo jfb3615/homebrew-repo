@@ -10,8 +10,6 @@ class Geant4 < Formula
      mkdir "builddir" do
      system "cmake", "..",   "-DGEANT4_USE_GDML=ON -DGEANT4_BUILD_MULTITHREADED=ON", *std_cmake_args
      system "make",      "install"
-    end
-    def post_install
      system "geant4-config --install-datasets"
     end
    end
