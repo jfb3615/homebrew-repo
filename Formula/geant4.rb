@@ -11,8 +11,8 @@ class Geant4 < Formula
      system "cmake", "..",   "-DGEANT4_USE_GDML=ON -DGEANT4_BUILD_MULTITHREADED=ON", *std_cmake_args
      system "make",      "install"
     end
-    def postinstall
-     system "echo geant4-config --install-datasets"
+    def post_install
+     system "geant4-config --install-datasets"
     end
    end
 end
