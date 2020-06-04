@@ -12,7 +12,7 @@ class Fullsimlight < Formula
   depends_on "eigen"
   depends_on "geomodelg4"
   depends_on "geant4"
-  depends_on "nlohmann_json"
+  depends_on "nlohmann-json"
 
   # INSTALLATION INSTRUCTIONS
   def install
