@@ -11,7 +11,7 @@ class Fullsimlight < Formula
   depends_on "cmake" => :build
   depends_on "eigen"
   depends_on "geomodelg4"
-  depends_on "geant4"
+  depends_on "jfb3615/repo/geant4"
   depends_on "nlohmann-json"
 
   # INSTALLATION INSTRUCTIONS

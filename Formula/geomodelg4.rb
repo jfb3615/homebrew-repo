@@ -13,6 +13,7 @@ class Geomodelg4 < Formula
   depends_on "clhep"
   depends_on "geomodelcore"
   depends_on "geomodelio"
+  depends_on "jfb3615/repo/geant4"
 
   # INSTALLATION INSTRUCTIONS
   def install
