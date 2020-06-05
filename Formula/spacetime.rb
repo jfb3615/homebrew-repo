@@ -8,7 +8,8 @@ class Spacetime < Formula
   sha256 "0d2ac17ac2877a3c983310721f7c43b1e6fd7d06a51b5776af0b8a5127fdf0bc"
   depends_on 'eigen' 
   depends_on 'pkg-config' 
-  # This line caused a complaint.  No longer needed?  :-->.   needs :cxx11 
+  depends_on "cmake" => :build
+   
   def install
     mkdir "build" do
       system "cmake", "..", *std_cmake_args
