@@ -8,10 +8,17 @@ class SoqtBb < Formula
   depends_on "qt5"
   depends_on "jfb3615/repo/coin-bb" 
   depends_on "jfb3615/repo/simage-bb"
-   def install
+  def install
     mkdir "builddir" do
       system "cmake", "..", "-DCMAKE_CXX_FLAGS=-std=c++14", *std_cmake_args
       system "make",      "install" 
     end
   end
+  
+  bottle do
+    root_url "https://qat.pitt.edu/Bottles"
+    cellar :any
+    sha256 "480253fa645c244261c0111cb3d9e4b06eda204b47b05877006377a2c559bf5b" => :catalina
+  end
+
 end
