@@ -13,6 +13,14 @@ class Geant4 < Formula
     
     end
    end
+  
+   bottle do
+    root_url "https://qat.pitt.edu/Bottles"
+    cellar :any
+    sha256 "b78d5fdcce760a4eefe0e000f5ae61e5eb6f61c78fd5dadff79948f8220e0672" => :catalina
+  end
+
+  
   def post_install
      system "geant4-config --install-datasets"
   end
