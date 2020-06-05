@@ -11,7 +11,7 @@ class Spacetime < Formula
   # This line caused a complaint.  No longer needed?  :-->.   needs :cxx11 
   def install
     mkdir "build" do
-      system "cmake", "-G", "Unix Makefiles", "..", *std_cmake_args
+      system "cmake", "..", *std_cmake_args
       system "make"
       system "make", "install"
     end
