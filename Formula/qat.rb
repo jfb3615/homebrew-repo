@@ -20,6 +20,13 @@ class Qat < Formula
     system "make", "install"
   end
 
+  bottle do
+    root_url "https://qat.pitt.edu/Bottles"
+    sha256 "0e60f2250fb94925dad6fa79326281b95e77621b06035d0ab746353c2ad4cb44" => :catalina
+  end
+
+  
+  
   def test 
   bin/"testprogram"
   end   
