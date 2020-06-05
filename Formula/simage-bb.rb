@@ -14,4 +14,12 @@ class SimageBb < Formula
       system "make",      "install" 
     end
   end
+  
+  bottle do
+    root_url "https://qat.pitt.edu/Bottles"
+    cellar :any
+    sha256 "88dd442c81ad12cc1c601e84c9deb566849b899eab47b6362546a96a3527df18" => :catalina
+  end
+
+  
 end
