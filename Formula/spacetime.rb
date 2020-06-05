@@ -4,36 +4,17 @@
 class Spacetime < Formula
   desc "The Spacetime Class Library is a small collection of classes intended to facilitate numerical computations in nonrelativistic and relativistic quantum mechanic"
   homepage "qat.pitt.edu"
-  url "https://www.qat.pitt.edu/spacetime-2.0.1.tar.gz"
+  url "https://www.qat.pitt.edu/spacetime-3.0.0.tar.gz"
   sha256 "e37a5ede0e0b706cc35baef7bd0b02c2345a5d1e190cb15cf6c063f3c1ae3b60"
   depends_on 'qt5' 
   depends_on 'eigen' 
   depends_on 'pkg-config' 
   # This line caused a complaint.  No longer needed?  :-->.   needs :cxx11 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
-    # Remove unrecognized options if warned by configure
-    system "qmake PREFIX=#{prefix}"
-    system "make", "install"
+    mkdir "build" do
+      system "cmake", "-G", "Unix Makefiles", "..", *std_cmake_args
+      system "make"
+      system "make", "install"
+    end
   end
-
-  test do
-  (testpath/"test.cpp").write <<~EOS
-      #include "Spacetime/FourVector.h"
-      int main()
-      {
-        FourVector v(5,4,3,0);
-	return v.norm()!=0;
-      }
-    EOS
-    system ENV.cxx, testpath/"test.cpp", "-I#{include}/Spacetime", "-std=c++11", "-o", "test"
-    system "./test"
-  end 
-  bottle do
-    root_url "https://qat.pitt.edu/Bottles"
-    sha256 "41f4cc0e346eec5c6ecad5b866563372e1f975c24ebaee7281b9cdbe5c6ac872" => :high_sierra
-    rebuild 1
-    sha256 "ebd0ccc306df4b29e7c96504c226f9f4a338269e3ff821a04b3c02a4af1e27bc" => :mojave
-  end
-
 end
