@@ -1,7 +1,7 @@
 class Qat < Formula
   desc "The QAT Package for computation in the physical sciences"
   homepage "qat.pitt.edu"
-  url "https://www.qat.pitt.edu/qat-3.0.0.tar.gz"
+  url "https://www.qat.pitt.edu/qat-3.0.1.tar.gz"
   sha256 "9a2602dacf281d4870e408777dfbc4f64f8f93a3a66d2199226467fdb18100a0"
   depends_on 'qt5' 
   depends_on 'eigen' 
