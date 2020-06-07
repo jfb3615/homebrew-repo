@@ -21,7 +21,7 @@ class Qat < Formula
   end
 
   bottle do
-    root_url "https://homebrew.bintray.com/bottles-repo"
+    root_url "https://qat.pitt.edu/Bottles"
     sha256 "48f88c809623afc6c56f5367f5af368179ff9d12227dba8b9899eb056f7b66a7" => :catalina
   end
 
