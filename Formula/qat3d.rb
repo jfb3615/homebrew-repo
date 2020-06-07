@@ -22,6 +22,10 @@ class Qat3d < Formula
     system "make", "install"
   end
 
+  bottle do
+    root_url "https://homebrew.bintray.com/bottles-repo"
+    sha256 "7ecd25c96430c2634ed5824acd6518f44afa09bb462ecf155ae499ba72dac959" => :catalina
+  end
 
   def test 
   bin/"testprogram"
