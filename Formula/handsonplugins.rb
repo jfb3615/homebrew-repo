@@ -7,7 +7,7 @@ class Handsonplugins < Formula
   # SOURCES
 
   url "https://qat.pitt.edu/handsonplugins-1.0.0.tar.gz"
-  sha256 "3d47c26bef98fa5736008be476dbed8c960e27b5bed599925df18de879a20d1d"
+  sha256 "e158c03f41de128c50a95dd59af94b799dd6cbcd924bffe5150450b46c530956"
   
   head do
     url "https://gitlab.cern.ch/GeoModelATLAS/HandsOnPlugins.git"
