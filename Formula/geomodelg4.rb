@@ -5,7 +5,7 @@ class Geomodelg4 < Formula
 
   # SOURCES
   url "https://qat.pitt.edu/GeoModelG4-1.0.0.tar.gz"
-  sha256 "ccaf2e7e11abe69b1026c1fa27ec1702c4e7ee7dc8a863824ea1fdf437e588ee"
+  sha256 "ddf55294b9ca30935e4e1054aacb85511c38b04fb576452548e39beb8f2e265b"
   
   
   head do
