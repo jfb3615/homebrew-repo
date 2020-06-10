@@ -7,7 +7,7 @@ class Geomodelio < Formula
   # SOURCES
   
   url "https://qat.pitt.edu/GeoModelIO-3.2.0.tar.gz"
-  sha256 "675de51a555cebaef14f56940f212d7c6c31a399b7d3d71c4a58a5ea54deb391"
+  sha256 "3d47c26bef98fa5736008be476dbed8c960e27b5bed599925df18de879a20d1d"
   
   head do
     url "https://gitlab.cern.ch/GeoModelDev/GeoModelIO.git"
