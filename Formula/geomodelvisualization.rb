@@ -33,5 +33,11 @@ class Geomodelvisualization < Formula
       system "make", "install"
    end
   end
+  
+  bottle do
+    root_url "https://qat.pitt.edu/Bottles"
+    sha256 "203ab6f4d14f101452d1818d96148a77d23c33fc01c56984421934ede4bd83bd" => :catalina
+  end
+
 
 end
