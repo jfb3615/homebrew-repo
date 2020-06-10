@@ -30,4 +30,12 @@ class Geomodelg4 < Formula
       system "make", "install"
    end
   end
+  
+ bottle do
+    root_url "https://qat.pitt.edu/Bottles"
+    cellar :any
+    sha256 "8e65e7dceac0556a7bf00f51bd66037ffb5bd0c45c7288aae4142031c57a7588" => :catalina
+  end
+
+  
 end
