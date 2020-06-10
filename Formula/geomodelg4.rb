@@ -3,14 +3,16 @@ class Geomodelg4 < Formula
   desc "GeoModelG4"
   homepage "https://gitlab.cern.ch/GeoModelDev/GeoModelG4"
 
-  head do
-    url "https://gitlab.cern.ch/GeoModelDev/GeoModelG4.git"
-  end
-  
   # SOURCES
   url "https://qat.pitt.edu/GeoModelG4-1.0.0.tar.gz"
   sha256 "ccaf2e7e11abe69b1026c1fa27ec1702c4e7ee7dc8a863824ea1fdf437e588ee"
   
+  
+  head do
+    url "https://gitlab.cern.ch/GeoModelDev/GeoModelG4.git"
+  end
+  
+
 
   # DEPENDENCIES
   depends_on "cmake" => :build
