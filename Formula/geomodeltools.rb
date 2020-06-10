@@ -6,7 +6,7 @@ class Geomodeltools < Formula
 
   # SOURCES
   url "https://qat.pitt.edu/GeoModelTools-4.1.0.tar.gz"
-  sha256 "d48c5242539b9d009bc47766b5a476629dfa5b5c77fad1e98ba244ecc5abb9d8"
+  sha256 "ccaf2e7e11abe69b1026c1fa27ec1702c4e7ee7dc8a863824ea1fdf437e588ee"
   
   head do
     url "https://gitlab.cern.ch/GeoModelDev/GeoModelTools.git"
