@@ -7,7 +7,7 @@ class Geomodelvisualization < Formula
   # SOURCES
   
   url "https://qat.pitt.edu/GeoModelVisualization-3.2.0.tar.gz"
-  sha256 "3d47c26bef98fa5736008be476dbed8c960e27b5bed599925df18de879a20d1d"
+  sha256 "d48c5242539b9d009bc47766b5a476629dfa5b5c77fad1e98ba244ecc5abb9d8"
   
   head do
     url "https://gitlab.cern.ch/GeoModelDev/geomodelvisualization.git"
