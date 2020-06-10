@@ -28,7 +28,7 @@ class Geomodelio < Formula
   end
   
   bottle do
-    root_url "https://homebrew.bintray.com/bottles-repo"
+    root_url "https://qat.pitt.edu/Bottles"
     cellar :any
     sha256 "823fb5f5539d0374b0e72d755cb225c23782a32e83f237e2f4b3320f5bddb333" => :catalina
   end
