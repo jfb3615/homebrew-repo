@@ -5,6 +5,10 @@ class Geomodelvisualization < Formula
   homepage "https://gitlab.cern.ch/GeoModelDev/geomodelvisualization"
 
   # SOURCES
+  
+  url "https://qat.pitt.edu/GeoModelVisualization-3.2.0.tar.gz"
+  sha256 "3d47c26bef98fa5736008be476dbed8c960e27b5bed599925df18de879a20d1d"
+  
   head do
     url "https://gitlab.cern.ch/GeoModelDev/geomodelvisualization.git"
     version "master"
