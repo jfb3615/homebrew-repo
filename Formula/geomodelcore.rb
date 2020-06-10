@@ -6,6 +6,7 @@ class Geomodelcore < Formula
   # SOURCES
   url "https://qat.pitt.edu/GeoModelCore-3.2.0.tar.gz"
   sha256 "675de51a555cebaef14f56940f212d7c6c31a399b7d3d71c4a58a5ea54deb391"
+ 
   head do
     url "https://gitlab.cern.ch/GeoModelDev/GeoModelCore.git"
   end
@@ -22,4 +23,12 @@ class Geomodelcore < Formula
       system "make", "install"
    end
   end
+  
+  bottle do
+    root_url "https://qat.pitt.edu/Bottles"
+    cellar :any
+    sha256 "70bdf91ac42eb646a5c1e788e6d899d40b4ccb9541b25d3bb58a8ac4f5877290" => :catalina
+  end
+
+  
 end
