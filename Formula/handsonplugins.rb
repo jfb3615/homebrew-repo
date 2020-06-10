@@ -28,5 +28,11 @@ class Handsonplugins < Formula
       system "make", "install"
    end
   end
+  
+  bottle do
+    root_url "https://qat.pitt.edu/Bottles"
+    cellar :any
+    sha256 "13f6c905981260dad8ec2e3cab00e78b7aeaccb68a8aff93a3f2e67cc9a9e281" => :catalina
+  end
 
 end
