@@ -4,8 +4,8 @@ class Geomodelcore < Formula
   homepage "https://gitlab.cern.ch/GeoModelDev/GeoModelCore"
 
   # SOURCES
-  #url "https://gitlab.cern.ch/GeoModelDev/GeoModelCore/-/archive/3.1.1/GeoModelCore-3.1.1.zip"
-  #sha256 "d169ed2056febb3c69b4707800bba5eda7153a47147230d4be8e05823f6cdf01"
+  url "https://qat.pitt.edu/GeoModelCore-3.2.0.tar.gz"
+  sha256 "d169ed2056febb3c69b4707800bba5eda7153a47147230d4be8e05823f6cdf01"
   head do
     url "https://gitlab.cern.ch/GeoModelDev/GeoModelCore.git"
   end
