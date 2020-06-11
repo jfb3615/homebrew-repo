@@ -7,7 +7,7 @@ class Atlasgeometryfiles < Formula
   # SOURCES
   
   url "https://qat.pitt.edu/geometry-data-1.0.0.tar.gz"
-  sha256 "675de51a555cebaef14f56940f212d7c6c31a399b7d3d71c4a58a5ea54deb391"
+  sha256 "6e14025dc437be15c0bed9f30cda435f8445ea0d05ed70dbac48f2680d983dee"
   
   head do
     url "https://gitlab.cern.ch/GeoModelATLAS/geometry-data.git"
