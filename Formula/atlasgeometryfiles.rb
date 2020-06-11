@@ -5,6 +5,10 @@ class Atlasgeometryfiles < Formula
   homepage "https://gitlab.cern.ch/GeoModelATLAS/geometry-data"
 
   # SOURCES
+  
+  url "https://qat.pitt.edu/geometry-data-1.0.0.tar.gz"
+  sha256 "675de51a555cebaef14f56940f212d7c6c31a399b7d3d71c4a58a5ea54deb391"
+  
   head do
     url "https://gitlab.cern.ch/GeoModelATLAS/geometry-data.git"
   end
