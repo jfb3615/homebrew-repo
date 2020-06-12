@@ -32,6 +32,10 @@ class Geomodeldatamanagers < Formula
    end
   end
   
-
+ bottle do
+    root_url "https://qat.pitt.edu/Bottles"
+    cellar :any
+    sha256 "83a8b0cb82c81f105d6cb12c0f303ba4dd9559aa5c22644163b3bc4a2f71dda2" => :catalina
+  end
 
 end
