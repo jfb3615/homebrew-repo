@@ -12,6 +12,11 @@ class Geomodelg4 < Formula
     url "https://gitlab.cern.ch/GeoModelDev/GeoModelG4.git"
   end
   
+  bottle do
+    root_url "https://qat.pitt.edu/Bottles"
+    cellar :any
+    sha256 "c68bf843e16d566b2c1590d29ce33f4b0801d77d8eae83d465166bbc7940c01d" => :catalina
+  end
 
 
   # DEPENDENCIES
