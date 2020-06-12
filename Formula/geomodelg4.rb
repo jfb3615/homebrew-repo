@@ -17,8 +17,8 @@ class Geomodelg4 < Formula
   # DEPENDENCIES
   depends_on "cmake" => :build
   depends_on "eigen"
-  depends_on "jfb3615/geomodelcore"
-  depends_on "jfb3615/geomodelio"
+  depends_on "jfb3615/repo/geomodelcore"
+  depends_on "jfb3615/repo/geomodelio"
   depends_on "jfb3615/repo/geant4"
 
   # INSTALLATION INSTRUCTIONS
