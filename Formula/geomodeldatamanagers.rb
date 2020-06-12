@@ -7,7 +7,7 @@ class Geomodeldatamanagers < Formula
   # SOURCES
   
   url "https://qat.pitt.edu/GeoModelDataManagers-1.0.0.tar.gz"
-  sha256 "3d47c26bef98fa5736008be476dbed8c960e27b5bed599925df18de879a20d1d"
+  sha256 "6170e98ee9b9825bc79a6d4eb23ce3e10ffbe71087649f80db95c606c62c670b"
   
   head do
     url "https://gitlab.cern.ch/GeoModelDev/GeoModelDataManagers.git"
