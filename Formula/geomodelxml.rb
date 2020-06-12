@@ -7,7 +7,7 @@ class Geomodelxml < Formula
   # SOURCES
   
   url "https://qat.pitt.edu/geomodelxml-1.0.0.tar.gz"
-  sha256 "6170e98ee9b9825bc79a6d4eb23ce3e10ffbe71087649f80db95c606c62c670b"
+  sha256 "ab0740e63510979ab17414c40739bdeb593dba8a81b4638834ce49e236ea3254"
   
   head do
     url "https://gitlab.cern.ch/GeoModelATLAS/geomodelxml.git"
