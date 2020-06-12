@@ -13,7 +13,7 @@ class Fullsimlight < Formula
   # DEPENDENCIES
   depends_on "cmake" => :build
   depends_on "eigen"
-  depends_on "geomodelg4"
+  depends_on "jfb3615/repo/geomodelg4"
   depends_on "jfb3615/repo/geant4"
   depends_on "nlohmann-json"
 
@@ -25,4 +25,12 @@ class Fullsimlight < Formula
       system "make", "install"
    end
   end
+  
+  bottle do
+    root_url "https://qat.pitt.edu/Bottles"
+    cellar :any
+    sha256 "589fec0d165c38e220aea50ed8a0a81d0649b502c73547cae90586b1dc6a2cb8" => :catalina
+  end
+
+  
 end
