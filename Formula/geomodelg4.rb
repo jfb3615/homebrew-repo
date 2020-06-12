@@ -4,7 +4,7 @@ class Geomodelg4 < Formula
   homepage "https://gitlab.cern.ch/GeoModelDev/GeoModelG4"
 
   # SOURCES
-  url "https://qat.pitt.edu/GeoModelG4-1.0.0.tar.gz"
+  url "https://qat.pitt.edu/GeoModelG4-1.1.0.tar.gz"
   sha256 "ddf55294b9ca30935e4e1054aacb85511c38b04fb576452548e39beb8f2e265b"
   
   
@@ -17,9 +17,8 @@ class Geomodelg4 < Formula
   # DEPENDENCIES
   depends_on "cmake" => :build
   depends_on "eigen"
-  depends_on "clhep"
-  depends_on "geomodelcore"
-  depends_on "geomodelio"
+  depends_on "jfb3615/geomodelcore"
+  depends_on "jfb3615/geomodelio"
   depends_on "jfb3615/repo/geant4"
 
   # INSTALLATION INSTRUCTIONS
@@ -31,11 +30,5 @@ class Geomodelg4 < Formula
    end
   end
   
- bottle do
-    root_url "https://qat.pitt.edu/Bottles"
-    cellar :any
-    sha256 "8e65e7dceac0556a7bf00f51bd66037ffb5bd0c45c7288aae4142031c57a7588" => :catalina
-  end
 
-  
 end
