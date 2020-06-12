@@ -1,6 +1,6 @@
 # Documentation: https://docs.brew.sh/Formula-Cookbook
 #                https://www.rubydoc.info/github/Homebrew/brew/master/Formula
-class Geomodelio < Formula
+class Geomodeldatamanagers < Formula
   desc "Data managers for geomodel classes"
   homepage "https://gitlab.cern.ch/GeoModelDev/GeoModelDataManagers"
 
