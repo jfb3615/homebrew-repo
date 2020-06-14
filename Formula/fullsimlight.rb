@@ -26,6 +26,11 @@ class Fullsimlight < Formula
    end
   end
   
- 
+   bottle do
+    root_url "https://qat.pitt.edu/Bottles"
+    cellar :any
+    sha256 "d163765168516d6d74e528841c965ae8f8b2cd3b92b51de3d5795d68b77141b2" => :catalina
+  end
+
   
 end
