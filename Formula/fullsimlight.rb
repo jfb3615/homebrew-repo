@@ -3,7 +3,7 @@ class Fullsimlight < Formula
   desc "FullSimLight"
   homepage "https://gitlab.cern.ch/GeoModelDev/FullSimLight"
 
-  url "https://qat.pitt.edu/FullSimLight-1.0.0.tar.gz"
+  url "https://qat.pitt.edu/FullSimLight-1.0.1.tar.gz"
   sha256 "1e6615efc1118e485930450be5511018f953bbb45e7ac37a65e6382324275bd0"
   
   head do
@@ -26,11 +26,6 @@ class Fullsimlight < Formula
    end
   end
   
-  bottle do
-    root_url "https://qat.pitt.edu/Bottles"
-    cellar :any
-    sha256 "589fec0d165c38e220aea50ed8a0a81d0649b502c73547cae90586b1dc6a2cb8" => :catalina
-  end
-
+ 
   
 end
