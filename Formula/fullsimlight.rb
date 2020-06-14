@@ -4,7 +4,7 @@ class Fullsimlight < Formula
   homepage "https://gitlab.cern.ch/GeoModelDev/FullSimLight"
 
   url "https://qat.pitt.edu/FullSimLight-1.0.1.tar.gz"
-  sha256 "1e6615efc1118e485930450be5511018f953bbb45e7ac37a65e6382324275bd0"
+  sha256 "2657146a1d18a480d19d40b996e15ce7c30c95bbcbae4b36828cd175ab5b7ce8"
   
   head do
     url "https://gitlab.cern.ch/GeoModelDev/FullSimLight.git"
