@@ -19,16 +19,16 @@ class Qat < Formula
     system "qmake PREFIX=#{prefix} QMAKE_STRIP="
     system "make", "install"
   end
-
   bottle do
     root_url "https://qat.pitt.edu/Bottles"
-    sha256 "48f88c809623afc6c56f5367f5af368179ff9d12227dba8b9899eb056f7b66a7" => :catalina
+    rebuild 1
+    sha256 "2d4d4987090164a51e3cb3ab853e85bd63f1c8fae4215258aff1ace5b41e4d43" => :catalina
   end
-
+ 
   
-  def test 
-  bin/"testprogram"
-  end   
+#  def test 
+#  bin/"testprogram"
+#  end   
 
  
 end
