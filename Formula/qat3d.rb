@@ -20,16 +20,16 @@ class Qat3d < Formula
     system "mkdir ../lib"
     system "qmake PREFIX=#{prefix} LIBS=-L/usr/local/lib QAT3D=1 QMAKE_STRIP="
     system "make", "install"
-  end
-
+  end  
+  
   bottle do
     root_url "https://qat.pitt.edu/Bottles"
-    sha256 "7ecd25c96430c2634ed5824acd6518f44afa09bb462ecf155ae499ba72dac959" => :catalina
+    sha256 "37a47e7dc9b134194b6fc779cd227fddcd366c10ca4a2ae03d61c91d06224466" => :catalina
   end
 
-  def test 
-  bin/"testprogram"
-  end   
+  #def test 
+  #bin/"testprogram"
+  #end   
 
 
 end
