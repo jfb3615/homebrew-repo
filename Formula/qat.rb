@@ -21,7 +21,6 @@ class Qat < Formula
   end
   bottle do
     root_url "https://qat.pitt.edu/Bottles"
-    rebuild 1
     sha256 "2d4d4987090164a51e3cb3ab853e85bd63f1c8fae4215258aff1ace5b41e4d43" => :catalina
   end
  
