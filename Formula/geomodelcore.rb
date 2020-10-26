@@ -14,6 +14,9 @@ class Geomodelcore < Formula
   # DEPENDENCIES
   depends_on "cmake" => :build
   depends_on "eigen"
+  depends_on "nlohmann-json" 
+  depends_on "xerces-c" 
+
 
   # INSTALLATION INSTRUCTIONS
   def install
