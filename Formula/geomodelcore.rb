@@ -16,6 +16,7 @@ class Geomodelcore < Formula
   depends_on "eigen"
   depends_on "nlohmann-json" 
   depends_on "xerces-c" 
+  depends_on "sqlite"
 
 
   # INSTALLATION INSTRUCTIONS
