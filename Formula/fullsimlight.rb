@@ -1,36 +1,38 @@
 class Fullsimlight < Formula
 
   desc "FullSimLight"
-  homepage "https://gitlab.cern.ch/GeoModelDev/FullSimLight"
+  homepage "https://gitlab.cern.ch/GeoModelDev"
 
-  url "https://qat.pitt.edu/FullSimLight-1.0.1.tar.gz"
-  sha256 "2657146a1d18a480d19d40b996e15ce7c30c95bbcbae4b36828cd175ab5b7ce8"
+  url "https://qat.pitt.edu/GeoModel-4.1.0.tar.gz"
+  sha256 "4900f0cc28d8039ea733f5e1ebc0c039f3e1322c0a2365b1fc68c1b8f1d2733d"
   
   head do
-    url "https://gitlab.cern.ch/GeoModelDev/FullSimLight.git"
+    url "https://gitlab.cern.ch/GeoModelDev/GeoModel.git"
+    version "master"
   end
+
 
   # DEPENDENCIES
   depends_on "cmake" => :build
   depends_on "eigen"
-  depends_on "jfb3615/repo/geomodelg4"
+  depends_on "geomodelcore"
   depends_on "jfb3615/repo/geant4"
   depends_on "nlohmann-json"
 
   # INSTALLATION INSTRUCTIONS
   def install
-    mkdir "build" do
+    mkdir "FullSimLight/build" do
       system "cmake", "-G", "Unix Makefiles", "..", *std_cmake_args
       system "make"
       system "make", "install"
    end
   end
   
-   bottle do
-    root_url "https://qat.pitt.edu/Bottles"
-    cellar :any
-    sha256 "d163765168516d6d74e528841c965ae8f8b2cd3b92b51de3d5795d68b77141b2" => :catalina
-  end
+ # bottle do
+ #   root_url "https://qat.pitt.edu/Bottles"
+ #   cellar :any
+ #   sha256 "d163765168516d6d74e528841c965ae8f8b2cd3b92b51de3d5795d68b77141b2" => :catalina
+ # end
 
   
 end
