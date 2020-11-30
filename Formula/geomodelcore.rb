@@ -5,7 +5,7 @@ class Geomodelcore < Formula
 
   # SOURCES
   url "https://qat.pitt.edu/GeoModel-4.1.0.tar.gz"
-  sha256 "c67dd07b58e36614aa10720af3d2c1407258945fbeaaa60cc39fd45cf29e27d3"
+  sha256 "4900f0cc28d8039ea733f5e1ebc0c039f3e1322c0a2365b1fc68c1b8f1d2733d"
  
   head do
     url "https://gitlab.cern.ch/GeoModelDev/GeoModel.git"
