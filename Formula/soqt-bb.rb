@@ -2,7 +2,7 @@ class SoqtBb < Formula
   desc "The SoQt package, allowing Coin to be used with Qt"
   homepage "https://github.com/coin3d"
   url "https://qat.pitt.edu/soqt-01Dec2020-00.tar.gz"
-  sha256 "105abcfdf3da18de26b1f2c9184e3c1d79349502b74255c06d165664eb8d19b5"
+  sha256 "ad83204cbe315f544b9978d9310fd25c67b58f873436df1a8776bd81c49afed6"
   depends_on "cmake" => :build
   depends_on "doxygen" => "build"
   depends_on "qt5"
