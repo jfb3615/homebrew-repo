@@ -16,9 +16,6 @@ class Geomodelvisualization < Formula
 
   # DEPENDENCIES
   depends_on "cmake" => :build
-  depends_on "qt"
-  depends_on "simage-bb"
-  depends_on "coin-bb"
   depends_on "soqt-bb"
   depends_on "geomodelcore"
   
