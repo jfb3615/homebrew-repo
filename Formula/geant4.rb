@@ -26,4 +26,3 @@ class Geant4 < Formula
      system "geant4-config --install-datasets"
   end
 end
-
