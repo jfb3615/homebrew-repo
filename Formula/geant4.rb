@@ -8,10 +8,10 @@ class Geant4 < Formula
   depends_on "xerces-c"
    def install
      inreplace "cmake/Modules/Geant4OptionalComponents.cmake",
-              "option(GEANT4_USE_SYSTEM_EXPAT \"Use system Expat library\" ON)",
-              "option(GEANT4_USE_SYSTEM_EXPAT \"Use system Expat library\" OFF)"
+              "if(GEANT4_USE_SYSTEM_EXPAT)",
+              "if(OFF)"
      mkdir "builddir" do
-     system "cmake", "..",   "-DGEANT4_USE_SYSTEM_EXPAT=OFF -DGEANT4_USE_GDML=ON -DGEANT4_BUILD_MULTITHREADED=ON -DGEANT4_GO_TO_HELL=OFF", *std_cmake_args
+     system "cmake", "..",   "-DGEANT4_USE_SYSTEM_EXPAT=OFF -DGEANT4_USE_GDML=ON -DGEANT4_BUILD_MULTITHREADED=ON", *std_cmake_args
      system "make",      "install"
     
     end
