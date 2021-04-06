@@ -5,7 +5,6 @@ class Geant4 < Formula
   sha256 "4fd64149ae26952672a81ce5579d3806fda4bd251d486897093ac57633a42b7e"
   depends_on "cmake" => :build
   depends_on "doxygen" => "build"
-  depends_on "expat" ==> "build"
   depends_on "xerces-c"
    def install
      mkdir "builddir" do
