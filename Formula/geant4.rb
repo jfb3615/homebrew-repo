@@ -9,6 +9,9 @@ class Geant4 < Formula
   depends_on "xerces-c"
    def install
      mkdir "builddir" do
+     system "pwd"
+     system "ls -l"
+     system "sleep", "20"
      system "cmake", "-DGEANT4_USE_SYSTEM_EXPAT=OFF -DGEANT4_USE_GDML=ON -DGEANT4_BUILD_MULTITHREADED=ON", *std_cmake_args, ".."
      system "make",      "install"
     
