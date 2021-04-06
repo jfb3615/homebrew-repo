@@ -7,12 +7,9 @@ class Geant4 < Formula
   depends_on "doxygen" => "build"
   depends_on "xerces-c"
    def install
-      inreplace "cmake/Modules/Geant4OptionalComponents.cmake",
-               "geant4_add_feature(GEANT4_USE_SYSTEM_EXPAT \"Using system EXPAT library\")",
-               "   "
      mkdir "builddir" do
-     system "cmake", "..",   "-DGEANT4_USE_SYSTEM_EXPAT=OFF -DGEANT4_USE_GDML=ON -DGEANT4_BUILD_MULTITHREADED=ON", *std_cmake_args
-     system "make",      "install"
+     system "zsh cmake", "..",   "-DGEANT4_USE_SYSTEM_EXPAT=OFF -DGEANT4_USE_GDML=ON -DGEANT4_BUILD_MULTITHREADED=ON", *std_cmake_args
+     system "zsh make",      "install"
     
     end
    end
@@ -26,6 +23,6 @@ class Geant4 < Formula
 
   
   def post_install
-     system "geant4-config --install-datasets"
+     system "echo SKIP: geant4-config --install-datasets"
   end
 end
