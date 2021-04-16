@@ -22,6 +22,6 @@ class Geant4 < Formula
 
   
   def post_install
-     system "echo SKIP: geant4-config --install-datasets"
+     system "geant4-config --install-datasets"
   end
 end
