@@ -17,7 +17,7 @@ class Geant4 < Formula
    bottle do
     root_url "https://qat.pitt.edu/Bottles"
     sha256 cellar: :any, big_sur: "cd23270d9cd69947ce566f606bbbe36d9fc739084dfd959fbc22205b3b85456c"
-    sha256 "b78d5fdcce760a4eefe0e000f5ae61e5eb6f61c78fd5dadff79948f8220e0672" => :catalina
+    #sha256 "b78d5fdcce760a4eefe0e000f5ae61e5eb6f61c78fd5dadff79948f8220e0672" => :catalina
   end
 
   
