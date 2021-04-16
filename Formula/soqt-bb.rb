@@ -18,7 +18,7 @@ class SoqtBb < Formula
   bottle do
     root_url "https://qat.pitt.edu/Bottles"
     sha256 cellar: :any, big_sur: "1149151c4e662a67b6e110f8d09dee4e6923d54f21f3b73776f7d0fa99f238c2"
-    sha256 cellar: :any, catalina" "480253fa645c244261c0111cb3d9e4b06eda204b47b05877006377a2c559bf5b"
+    sha256 cellar: :any, catalina: "480253fa645c244261c0111cb3d9e4b06eda204b47b05877006377a2c559bf5b"
   end
 
 end
