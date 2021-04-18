@@ -22,7 +22,7 @@ class Geomodelg4 < Formula
   # DEPENDENCIES
   depends_on "cmake" => :build
   depends_on "eigen"
-  depends_on "jfb3615/geomodel"
+  depends_on "jfb3615/repo/geomodel"
   depends_on "jfb3615/repo/geant4"
 
   # INSTALLATION INSTRUCTIONS
