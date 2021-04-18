@@ -1,4 +1,4 @@
-class GeomodelTools < Formula
+class Geomodeltools < Formula
 
   desc "GeoModelTools"
   homepage "https://gitlab.cern.ch/GeoModelDev"
