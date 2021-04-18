@@ -22,7 +22,6 @@ class GeomodelTools < Formula
   # DEPENDENCIES
   depends_on "cmake" => :build
   depends_on "eigen"
-  depends_on "nlohmann_json"
   depends_on "jfb3615/repo/geomodelcore"
 
   # INSTALLATION INSTRUCTIONS
