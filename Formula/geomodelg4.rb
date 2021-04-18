@@ -2,34 +2,33 @@ class Geomodelg4 < Formula
 
   desc "GeoModelG4"
   homepage "https://gitlab.cern.ch/GeoModelDev/GeoModelG4"
-
-  # SOURCES
-  url "https://qat.pitt.edu/GeoModelG4-1.1.0.tar.gz"
-  sha256 "c1a9d2d1900ce54f964b7ffbbd3b00fac46ba992d3c9fd84f1d81c24992acd6f"
+   
   
+  url "https://qat.pitt.edu/GeoModel-4.2.0.tar.gz"
+  sha256 "4900f0cc28d8039ea733f5e1ebc0c039f3e1322c0a2365b1fc68c1b8f1d2733d"
   
   head do
-    url "https://gitlab.cern.ch/GeoModelDev/GeoModelG4.git"
+    url "https://gitlab.cern.ch/GeoModelDev/GeoModel.git"
+    version "master"
   end
+
   
   bottle do
     root_url "https://qat.pitt.edu/Bottles"
-    cellar :any
-    sha256 "c68bf843e16d566b2c1590d29ce33f4b0801d77d8eae83d465166bbc7940c01d" => :catalina
+    sha256 catalina: "c68bf843e16d566b2c1590d29ce33f4b0801d77d8eae83d465166bbc7940c01d"
   end
 
 
   # DEPENDENCIES
   depends_on "cmake" => :build
   depends_on "eigen"
-  depends_on "jfb3615/repo/geomodelcore"
-  depends_on "jfb3615/repo/geomodelio"
+  depends_on "jfb3615/geomodel"
   depends_on "jfb3615/repo/geant4"
 
   # INSTALLATION INSTRUCTIONS
   def install
     mkdir "build" do
-      system "cmake", "-G", "Unix Makefiles", "..", *std_cmake_args
+      system "cmake", "-G", "Unix Makefiles", "../GeoModelG4", *std_cmake_args
       system "make"
       system "make", "install"
    end
