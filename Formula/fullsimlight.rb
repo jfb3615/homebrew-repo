@@ -4,8 +4,8 @@ class Fullsimlight < Formula
   homepage "https://gitlab.cern.ch/GeoModelDev"
 
     
-  url "https://qat.pitt.edu/GeoModel-4.2.0.tar.gz"
-  sha256 "0f9f5e4bdca5cbdda4f5fd7166aadb5ee1b137fc3428adb93d8ce290de66241e"
+  url "https://qat.pitt.edu/GeoModel-4.2.1.tar.gz"
+  sha256 "2e000a90de06264227ef902abea5aa305dc2050a270f6bd073bdf6542a060dec"
   
   
   head do
