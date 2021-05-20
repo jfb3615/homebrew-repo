@@ -3,7 +3,7 @@ class Geomodeltools < Formula
   desc "GeoModelTools"
   homepage "https://gitlab.cern.ch/GeoModelDev"
    
-  url "https://qat.pitt.edu/GeoModel-4.2.0.tar.gz"
+  url "https://qat.pitt.edu/GeoModel-4.2.1.tar.gz"
   sha256 "0f9f5e4bdca5cbdda4f5fd7166aadb5ee1b137fc3428adb93d8ce290de66241e"
   
   head do
