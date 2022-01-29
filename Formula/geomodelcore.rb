@@ -29,7 +29,7 @@ class Geomodelcore < Formula
   
   bottle do
     root_url "https://qat.pitt.edu/Bottles"
-    sha256 cellar: :any, big_sur: "020b6108651036a7cd07314eba286b88a25d2086022406fff60ecd439920a7fc"
+    sha256 cellar: :any, big_sur: "3c69ec4c39d482637379d3c09274cbf6be5492b51fc0e63dcacf85077e57bd9c"
   end
   
 end
