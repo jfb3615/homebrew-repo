@@ -33,7 +33,7 @@ class Fullsimlight < Formula
   
  bottle do
    root_url "https://qat.pitt.edu/Bottles"
-   sha256 cellar: :any, big_sur: "9ce2dc55a75ef9e2ed35252471e0dcd95a39c24389862411a27c55b82cf63fc2"
+   sha256 cellar: :any, big_sur: "73c7aa98279c82e0529939216843c0bdbf150a0f806df1a37a1a2bbc4a3f727f"
  end
 
   
