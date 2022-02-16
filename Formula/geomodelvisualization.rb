@@ -30,7 +30,7 @@ class Geomodelvisualization < Formula
   
  bottle do
     root_url "https://qat.pitt.edu/Bottles"
-    sha256 catalina: "1aefb3e8690c2c6bd1138b40090e3095ba40bb3587f164fc120a89b4fe9e71c6
+    sha256 catalina: "1aefb3e8690c2c6bd1138b40090e3095ba40bb3587f164fc120a89b4fe9e71c6"
  end
 
 end
