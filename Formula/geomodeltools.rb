@@ -14,7 +14,7 @@ class Geomodeltools < Formula
   
   bottle do
     root_url "https://qat.pitt.edu/Bottles"
-    sha256 cellar: :any, big_sur: "8adcc05f2359f33e61c367224dbf300c8afbcdad83fe8655fb8a44b4db6d8db7"
+    sha256 cellar: :any, catalina: "75d9e1580cc280e34306b9c523dcd4be1d3fdaceb41cccef79d9d012a03519a5"
   end
 
 
