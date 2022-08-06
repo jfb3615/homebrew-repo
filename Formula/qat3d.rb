@@ -18,7 +18,7 @@ class Qat3d < Formula
   def install
     ENV.deparallelize  
     system "mkdir ../lib"
-    system "qmake PREFIX=#{prefix} LIBS+=-L/opt/homebrew/lib LIBS+=-L/usr/local/lib QAT3D=1 QMAKE_STRIP="
+    system "qmake PREFIX=#{prefix} LIBS+=-L#{HOMEBREW_PREFIX}/lib INCLUDE_PATH+=#{HOMEBREW_PREFIX}/include QAT3D=1 QMAKE_STRIP="
     system "make", "install"
   end  
   
