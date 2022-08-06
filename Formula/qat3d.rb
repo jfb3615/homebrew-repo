@@ -24,8 +24,7 @@ class Qat3d < Formula
   
   bottle do
     root_url "https://qat.pitt.edu/Bottles"
-    sha256 big_sur: "25d57b673b0d617e4438c151805fbaea1205d749b1deede3dfc1bbf0cb218cd3"
-    sha256 cellar: :any, catalina: "5ed5587adba898140ed24d43a2e06c7f813440e70f200ff043d2567d5ddce87c"
+    sha256 arm64_monterey: "ffb3a25ddf2f60670a5db090e6981db794b697f2b690cef8f8fae657d7e4a22b"
   end
   
   #def test 
