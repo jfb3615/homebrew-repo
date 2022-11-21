@@ -2,7 +2,7 @@ class Geant4 < Formula
   desc "Geant4 simulation development toolkit"
   homepage "https://geant4.web.cern.ch"
   url "https://qat.pitt.edu/geant4-v11.0.3.tar.gz"
-  sha256 "4fd64149ae26952672a81ce5579d3806fda4bd251d486897093ac57633a42b7e"
+  sha256 "1e6560b802aa84e17255b83987dfc98a1457154fb603d0f340fae978238de3e7"
   depends_on "cmake" => :build
   depends_on "doxygen" => "build"
   depends_on "xerces-c"
