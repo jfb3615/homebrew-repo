@@ -5,8 +5,8 @@ class Geomodelvisualization < Formula
   homepage "https://gitlab.cern.ch/GeoModelDev"
 
   # SOURCES
-  url "https://qat.pitt.edu/GeoModel-4.2.6.tar.gz"
-  sha256 "fffcfec5340f0317cb686d17d5cabcce3c2875e3ac88031eb03db50c95bcac47"
+  url "https://qat.pitt.edu/GeoModel-4.4.3-pre.tar.gz"
+  sha256 "d74cf58333f8eb673a7484914c3fddbebfadf23e715a558058085ab7375e1fa4"
  
   
   head do
