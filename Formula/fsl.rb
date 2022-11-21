@@ -1,4 +1,4 @@
-class FSL < Formula
+class Fsl < Formula
 
   desc "FSL"
   homepage "https://gitlab.cern.ch/GeoModelDev"
