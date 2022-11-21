@@ -15,6 +15,7 @@ class Fsl < Formula
 
   # DEPENDENCIES
   depends_on "cmake" => :build
+  depends_on "qt5"
   depends_on "nlohmann-json"
 
   # INSTALLATION INSTRUCTIONS
