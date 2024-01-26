@@ -1,4 +1,4 @@
-class Rootjfb < Formula
+class RootJfb < Formula
   desc "Object oriented framework for large scale data analysis"
   homepage "https://root.cern.ch/"
   url "https://root.cern.ch/download/root_v6.28.10.source.tar.gz"
