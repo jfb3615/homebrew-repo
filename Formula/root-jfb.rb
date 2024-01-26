@@ -126,7 +126,7 @@ class RootJfb < Formula
       -Dpyroot=OFF
       -Dpythia6=OFF
       -Dpythia8=OFF
-      -Droofit=OFF
+      -Droofit=ON
       -Dssl=OFF
       -Dtmva=OFF
       -Dvdt=OFF
