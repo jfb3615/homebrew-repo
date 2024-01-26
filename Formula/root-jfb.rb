@@ -2,7 +2,7 @@ class RootJfb < Formula
   desc "Object oriented framework for large scale data analysis"
   homepage "https://root.cern.ch/"
   url "https://root.cern.ch/download/root_v6.28.10.source.tar.gz"
-  sha256 "69d6fdeb607e6b20bd02c757fa6217024c0b6132c1e9b1dff4d85d9a2bb7e51e
+  sha256 "69d6fdeb607e6b20bd02c757fa6217024c0b6132c1e9b1dff4d85d9a2bb7e51e"
   license "LGPL-2.1-or-later"
   head "https://github.com/root-project/root.git", branch: "master"
 
