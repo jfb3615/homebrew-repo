@@ -203,4 +203,4 @@ class Rootjfb < Formula
     system python3, "-c", "import ROOT; ROOT.gSystem.LoadAllLibraries()"
   end
 end
-B
+
