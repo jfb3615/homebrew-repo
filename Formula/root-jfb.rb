@@ -1,7 +1,7 @@
 class Rootjfb < Formula
   desc "Object oriented framework for large scale data analysis"
   homepage "https://root.cern.ch/"
-  url "https://root.cern.ch/download/root_v6.30.02.source.tar.gz"
+  url "https://root.cern.ch/download/root_v6.28.10.source.tar.gz"
   sha256 "7965a456d1ad1ee0d5fe4769bf5a8fec291af684ed93db0f3080a9c362435183"
   license "LGPL-2.1-or-later"
   head "https://github.com/root-project/root.git", branch: "master"
@@ -14,15 +14,7 @@ class Rootjfb < Formula
     end
   end
 
-  bottle do
-    sha256 arm64_sonoma:   "4b2a1b6bfe2d39f7666c6f6a874b7d9c2ba277c4448d51ab8896aa6a46ac3aa0"
-    sha256 arm64_ventura:  "bbf6fbae07b390590fe0d290a8a90f7a5b864e2c4b7ea474d716f5e642dc9ce6"
-    sha256 arm64_monterey: "acaf8658cb91269e2c065efe51d5be2b309da92ab589235ef76f87541e94a590"
-    sha256 sonoma:         "469fbc04c895638635c131ba8f5182aba1da2aa5f84771302648815371810e74"
-    sha256 ventura:        "54f2a63a6bbb72daa5f7d2bcb5a16ed14dbb8a1c0b0b884d7db7b15d19206d6b"
-    sha256 monterey:       "0fdf27595af1c44db1c22ab181daca40b31a05e537f0c5ef8ed05951ae713939"
-  end
-
+ 
   depends_on "cmake" => :build
   depends_on "ninja" => :build
   depends_on "pkg-config" => :build
@@ -97,7 +89,7 @@ class Rootjfb < Formula
       -Dbuiltin_freetype=OFF
       -Dbuiltin_ftgl=OFF
       -Dbuiltin_gl2ps=OFF
-      -Dbuiltin_glew=OFF
+      -Dbuiltin_glew=ON
       -Dbuiltin_gsl=OFF
       -Dbuiltin_llvm=ON
       -Dbuiltin_lz4=OFF
@@ -109,39 +101,39 @@ class Rootjfb < Formula
       -Dbuiltin_tbb=OFF
       -Dbuiltin_unuran=OFF
       -Dbuiltin_vc=OFF
-      -Dbuiltin_vdt=ON
+      -Dbuiltin_vdt=OFF
       -Dbuiltin_veccore=OFF
       -Dbuiltin_xrootd=OFF
       -Dbuiltin_xxhash=OFF
       -Dbuiltin_zeromq=OFF
       -Dbuiltin_zlib=OFF
       -Dbuiltin_zstd=OFF
-      -Dcfitsio=ON
+      -Dcfitsio=OFF
       -Ddavix=ON
       -Ddev=OFF
       -Dfail-on-missing=ON
-      -Dfftw3=ON
-      -Dfitsio=ON
-      -Dfortran=ON
-      -Dfreetype=ON
-      -Dgdml=ON
+      -Dfftw3=OFF
+      -Dfitsio=OFF
+      -Dfortran=OFF
+      -Dfreetype=OFF
+      -Dgdml=OFF
       -Dgfal=OFF
       -Dgnuinstall=ON
       -Dimt=ON
       -Dmathmore=ON
-      -Dminuit2=ON
-      -Dmysql=ON
+      -Dminuit2=OFF
+      -Dmysql=OFF
       -Docaml=OFF
       -Doracle=OFF
       -Dpgsql=OFF
-      -Dpyroot=ON
+      -Dpyroot=OFF
       -Dpythia6=OFF
       -Dpythia8=OFF
-      -Droofit=ON
-      -Dssl=ON
-      -Dtmva=ON
-      -Dvdt=ON
-      -Dxrootd=ON
+      -Droofit=OFF
+      -Dssl=OFF
+      -Dtmva=OFF
+      -Dvdt=OFF
+      -Dxrootd=OFF
       -GNinja
     ]
 
