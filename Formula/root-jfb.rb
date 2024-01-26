@@ -118,7 +118,7 @@ class RootJfb < Formula
       -Dgnuinstall=ON
       -Dimt=ON
       -Dmathmore=ON
-      -Dminuit2=OFF
+      -Dminuit2=ON
       -Dmysql=OFF
       -Docaml=OFF
       -Doracle=OFF
