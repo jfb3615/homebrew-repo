@@ -74,12 +74,10 @@ class RootJfb < Formula
     end
 
     args = std_cmake_args + %W[
-      -DCLING_CXX_PATH=clang++
       -DCMAKE_CXX_STANDARD=17
       -Dbuiltin_afterimage=ON
       -Dbuiltin_cfitsio=OFF
       -Dbuiltin_clang=ON
-      -Dbuiltin_cling=ON
       -Dbuiltin_cppzmq=OFF
       -Dbuiltin_davix=OFF
       -Dbuiltin_fftw3=OFF
