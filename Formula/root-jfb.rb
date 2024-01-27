@@ -61,8 +61,8 @@ class RootJfb < Formula
     "python3.11"
   end
 
-patch :config/RConfigure.in
-patch :p0, :config/RConfigure.in
+patch :DATA
+patch :p0, :DATA
 
 
 
@@ -118,6 +118,6 @@ __END__
  
  #@setresuid@ R__HAS_SETRESUID   /**/
  #@hasmathmore@ R__HAS_MATHMORE   /**/
-
+"
 
 
