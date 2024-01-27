@@ -61,7 +61,7 @@ class RootJfb < Formula
     "python3.11"
   end
 
-patch :p1, :DATA
+patch :p0, :DATA
 
 
 
