@@ -62,7 +62,7 @@ class RootJfb < Formula
   end
 
 patch :DATA
-patch :p0, :DATA
+patch :p1, :DATA
 
 
 
