@@ -87,7 +87,7 @@ class RootJfb < Formula
     end    
    
     chmod 0755, bin.glob("*.*sh")
-
+    lib.install Dir[ "cmake" ]
   
   end
 
