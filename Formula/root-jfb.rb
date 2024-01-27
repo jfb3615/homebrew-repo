@@ -61,6 +61,11 @@ class RootJfb < Formula
     "python3.11"
   end
 
+patch :DATA
+
+
+
+  
   def install
    
     args = std_cmake_args + %W[
@@ -95,4 +100,21 @@ class RootJfb < Formula
 
 
 end
+__END__
+-- config/RConfigure.in        2024-01-27 18:27:50
++++ config/RConfigure.in        2024-01-27 18:28:25
+@@ -23,13 +23,6 @@
+ #define EXTRAICONPATH "@extraiconpath@"
+ 
+ #define ROOT__cplusplus @__cplusplus@
+-#if defined(__cplusplus) && (__cplusplus != ROOT__cplusplus)
+-# if defined(_MSC_VER)
+-#  pragma message("The C++ standard in this build does not match ROOT configuration (@__cplusplus@); this might cause unexpected issues. And please make sure you are using the -Zc:__cplusplus compilation flag")
+-# else
+-#  warning "The C++ standard in this build does not match ROOT configuration (@__cplusplus@); this might cause unexpected issues"
+-# endif
+-#endif
+ 
+ #@setresuid@ R__HAS_SETRESUID   /**/
+ #@hasmathmore@ R__HAS_MATHMORE   /**/
 
