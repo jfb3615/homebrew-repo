@@ -81,7 +81,7 @@ class RootJfb < Formula
     #inreplace "build/unix/compiledata.sh", "`type -path $CXX`", ENV.cxx
 
     mkdir "BUILD" do
-      system "cmake", "-G", "Unix Makefiles", "..", *std_cmake_args
+      system "cmake", "-G", "Unix Makefiles", "..", *args
       system "make"
       system "make", "install"
     end    
