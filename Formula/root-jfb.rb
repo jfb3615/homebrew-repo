@@ -78,11 +78,13 @@ class RootJfb < Formula
     ]
 
     # Workaround the shim directory being embedded into the output
-    inreplace "build/unix/compiledata.sh", "`type -path $CXX`", ENV.cxx
+    #inreplace "build/unix/compiledata.sh", "`type -path $CXX`", ENV.cxx
 
-    system "cmake", "-G", "Unix Makefiles", "..", *std_cmake_args
-    system "make"
-    system "make", "install"
+    mkdir "BUILD" do
+      system "cmake", "-G", "Unix Makefiles", "..", *std_cmake_args
+      system "make"
+      system "make", "install"
+    end    
    
     chmod 0755, bin.glob("*.*sh")
 
