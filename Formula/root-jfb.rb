@@ -73,7 +73,6 @@ class RootJfb < Formula
       -Dpyroot=OFF
       -Dpythia6=OFF
       -Dpythia8=OFF
-      -Droofit=OFF
       -Dvdt=OFF
       -Dxrootd=OFF
     ]
@@ -87,7 +86,8 @@ class RootJfb < Formula
     system "cmake", "--build", "builddir"
     system "ctest", "-R", "tutorial-tree", "--verbose", "--parallel", ENV.make_jobs, "--test-dir", "builddir"
     system "cmake", "--install", "builddir"
-
+    system "ln -s etc lib"
+    system "ln -s include lib"
     chmod 0755, bin.glob("*.*sh")
 
     pth_contents = "import site; site.addsitedir('#{lib}/root')\n"
