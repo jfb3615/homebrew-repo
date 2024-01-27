@@ -61,8 +61,8 @@ class RootJfb < Formula
     "python3.11"
   end
 
-patch :DATA
-patch :p0, :DATA
+patch :config/RConfigure.in
+patch :p0, :config/RConfigure.in
 
 
 
