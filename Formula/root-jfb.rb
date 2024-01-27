@@ -80,17 +80,13 @@ class RootJfb < Formula
     # Workaround the shim directory being embedded into the output
     inreplace "build/unix/compiledata.sh", "`type -path $CXX`", ENV.cxx
 
-    # Homebrew now sets CMAKE_INSTALL_LIBDIR to /lib, which is incorrect
-    # for ROOT with gnuinstall, so we set it back here.
-    system "cmake", "-S", ".", "-B", "builddir", *args) 
-    system "cmake", "--build", "builddir"
-    system "ctest", "-R", "tutorial-tree", "--verbose", "--parallel", ENV.make_jobs, "--test-dir", "builddir"
-    system "cmake", "--install", "builddir"
+    system "cmake", "-G", "Unix Makefiles", "..", *std_cmake_args
+    system "make"
+    system "make", "install"
    
     chmod 0755, bin.glob("*.*sh")
 
-    pth_contents = "import site; site.addsitedir('#{lib}/root')\n"
-    (prefix/Language::Python.site_packages(python3)/"homebrew-root.pth").write pth_contents
+  
   end
 
  
