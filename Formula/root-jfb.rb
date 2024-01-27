@@ -102,8 +102,8 @@ patch :p0, :DATA
 
 end
 __END__
---- a/root-jfb/config/RConfigure.in        2024-01-27 18:27:50
-+++ b/root-jfb/config/RConfigure.in        2024-01-27 18:28:25
+--- root-jfb/config/RConfigure.in        2024-01-27 18:27:50
++++ root-jfb/config/RConfigure.in        2024-01-27 18:28:25
 @@ -23,13 +23,6 @@
  #define EXTRAICONPATH "@extraiconpath@"
  
