@@ -102,8 +102,8 @@ patch :p0, :DATA
 
 end
 __END__
---- a/config/RConfigure.in        2024-01-27 18:27:50
-+++ b/config/RConfigure.in        2024-01-27 18:28:25
+--- root-6.28.10/config/RConfigure.in        2024-01-27 18:27:50
++++ root-6.28.10/config/RConfigure.in        2024-01-27 18:28:25
 @@ -23,13 +23,6 @@
  #define EXTRAICONPATH "@extraiconpath@"
  
