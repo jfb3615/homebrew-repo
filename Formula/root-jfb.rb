@@ -83,15 +83,15 @@ class RootJfb < Formula
 
     # Homebrew now sets CMAKE_INSTALL_LIBDIR to /lib, which is incorrect
     # for ROOT with gnuinstall, so we set it back here.
-    # system "cmake", "-S", ".", "-B", "builddir", *args, *std_cmake_args(install_libdir: "lib/root")
+    system "cmake", "-S", ".", "-B", "builddir", *args, *std_cmake_args(install_libdir: "lib/root")
     system "cmake", "--build", "builddir"
     system "ctest", "-R", "tutorial-tree", "--verbose", "--parallel", ENV.make_jobs, "--test-dir", "builddir"
     system "cmake", "--install", "builddir"
 
     chmod 0755, bin.glob("*.*sh")
 
-    #pth_contents = "import site; site.addsitedir('#{lib}/root')\n"
-    #(prefix/Language::Python.site_packages(python3)/"homebrew-root.pth").write pth_contents
+    pth_contents = "import site; site.addsitedir('#{lib}/root')\n"
+    (prefix/Language::Python.site_packages(python3)/"homebrew-root.pth").write pth_contents
   end
 
  
