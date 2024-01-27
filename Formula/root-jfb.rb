@@ -75,61 +75,17 @@ class RootJfb < Formula
 
     args = std_cmake_args + %W[
       -DCMAKE_CXX_STANDARD=17
-      -Dbuiltin_afterimage=ON
-      -Dbuiltin_cfitsio=OFF
-      -Dbuiltin_clang=ON
-      -Dbuiltin_cppzmq=OFF
-      -Dbuiltin_davix=OFF
-      -Dbuiltin_fftw3=OFF
-      -Dbuiltin_freetype=OFF
-      -Dbuiltin_ftgl=OFF
-      -Dbuiltin_gl2ps=OFF
       -Dbuiltin_glew=ON
-      -Dbuiltin_gsl=OFF
-      -Dbuiltin_llvm=ON
-      -Dbuiltin_lz4=OFF
-      -Dbuiltin_lzma=OFF
-      -Dbuiltin_nlohmannjson=OFF
-      -Dbuiltin_openssl=OFF
-      -Dbuiltin_openui5=ON
-      -Dbuiltin_pcre=OFF
-      -Dbuiltin_tbb=OFF
-      -Dbuiltin_unuran=OFF
-      -Dbuiltin_vc=OFF
-      -Dbuiltin_vdt=OFF
-      -Dbuiltin_veccore=OFF
-      -Dbuiltin_xrootd=OFF
-      -Dbuiltin_xxhash=OFF
-      -Dbuiltin_zeromq=OFF
-      -Dbuiltin_zlib=OFF
-      -Dbuiltin_zstd=OFF
-      -Dcfitsio=OFF
-      -Ddavix=ON
-      -Ddev=OFF
-      -Dfail-on-missing=ON
-      -Dfftw3=OFF
-      -Dfitsio=OFF
-      -Dfortran=OFF
-      -Dfreetype=OFF
-      -Dgdml=OFF
-      -Dgfal=OFF
-      -Dgnuinstall=ON
-      -Dimt=ON
-      -Dmathmore=ON
-      -Dminuit2=ON
       -Dmysql=OFF
-      -Docaml=OFF
-      -Doracle=OFF
+      -Dtmva=OFF
+      -Dvdt=OFF
       -Dpgsql=OFF
       -Dpyroot=OFF
       -Dpythia6=OFF
       -Dpythia8=OFF
-      -Droofit=ON
-      -Dssl=OFF
-      -Dtmva=OFF
+      -Droofit=OFF
       -Dvdt=OFF
       -Dxrootd=OFF
-      -GNinja
     ]
 
     # Workaround the shim directory being embedded into the output
