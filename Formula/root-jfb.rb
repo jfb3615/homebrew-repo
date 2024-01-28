@@ -93,7 +93,7 @@ patch :p0, :DATA
     end    
    
     chmod 0755, bin.glob("*.*sh")
-    lib.install Dir[ "cmake" ]
+    #lib.install Dir[ "cmake" ]
   
   end
 
