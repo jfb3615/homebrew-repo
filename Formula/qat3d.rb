@@ -22,10 +22,10 @@ class Qat3d < Formula
     system "make", "install"
   end  
   
-  bottle do
-    root_url "https://qat.pitt.edu/Bottles"
-    sha256 arm64_monterey: "ffb3a25ddf2f60670a5db090e6981db794b697f2b690cef8f8fae657d7e4a22b"
-  end
+  #bottle do
+  #  root_url "https://qat.pitt.edu/Bottles"
+  #  sha256 arm64_monterey: "ffb3a25ddf2f60670a5db090e6981db794b697f2b690cef8f8fae657d7e4a22b"
+  #end
   
   #def test 
   #bin/"testprogram"
