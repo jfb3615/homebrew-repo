@@ -8,7 +8,7 @@ class CoinBb < Formula
   depends_on "boost"
   def install
     mkdir "builddir" do
-      system "cmake", "..", "-DCMAKE_CXX_FLAGS=-std=c++14", *std_cmake_args
+      system "cmake", "..", "-DCMAKE_CXX_FLAGS=-std=c++17", *std_cmake_args
       system "make",      "install" 
     end
   end
