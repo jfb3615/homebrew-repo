@@ -5,7 +5,7 @@ class SoqtBb < Formula
   sha256 "ae1f228763897183cd30b126e49586486118b3ce1dc4ce9fcec52870228ccdc3"
   depends_on "cmake" => :build
   depends_on "doxygen" => "build"
-  depends_on "qt5"
+  depends_on "qt6"
   depends_on "jfb3615/repo/coin-bb" 
   depends_on "jfb3615/repo/simage-bb"
   def install
