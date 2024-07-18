@@ -1,7 +1,7 @@
 class SoqtBb < Formula
   desc "The SoQt package, allowing Coin to be used with Qt"
   homepage "https://github.com/coin3d"
-  url "https://qat.pitt.edu/soqt-01Dec2020-00.tar.gz"
+  url "https://qat.pitt.edu/soqt-1.6.2.tar.gz"
   sha256 "ae1f228763897183cd30b126e49586486118b3ce1dc4ce9fcec52870228ccdc3"
   depends_on "cmake" => :build
   depends_on "doxygen" => "build"
@@ -10,7 +10,7 @@ class SoqtBb < Formula
   depends_on "jfb3615/repo/simage-bb"
   def install
     mkdir "builddir" do
-      system "cmake", "..", "-DCMAKE_CXX_FLAGS=-std=c++14", *std_cmake_args
+      system "cmake", "..", "-DCMAKE_CXX_FLAGS=-std=c++17", *std_cmake_args
       system "make",      "install" 
     end
   end
