@@ -2,7 +2,7 @@ class CoinBb < Formula
   desc "The Coin implemention of the Open Inventor Toolkit"
   homepage "https://github.com/coin3d"
   url "https://qat.pitt.edu/coin-4.0.2.tar.gz"
-  sha256 "52f88a3c3043f953492c6592044a0ff2f14dfbdd593faaa5e80e7a2186ac9bc2"
+  sha256 "3b1c5d6e94ca34b51b6c97569dd216b4402ceacd7671410b7ba2ded5e8a9bf94"
   depends_on "cmake" => :build
   depends_on "doxygen" => :build
   depends_on "boost"
