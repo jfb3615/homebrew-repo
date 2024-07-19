@@ -6,6 +6,9 @@ class CoinBb < Formula
   depends_on "cmake" => :build
   depends_on "doxygen" => :build
   depends_on "boost"
+  depends_on "mesa"
+  
+
   def install
     mkdir "builddir" do
       system "which", "cmake"
