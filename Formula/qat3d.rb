@@ -3,6 +3,7 @@ class Qat3d < Formula
   homepage "qat.pitt.edu"
   url "https://www.qat.pitt.edu/qat-5.0.0.tar.gz"
   sha256 "56f5bcd742313d2ec734ce9a5a2a46ad09d4e9e859a4811b1ddc0cbcec307c78"
+  depends_on 'cmake'
   depends_on 'qt6'
   depends_on 'eigen' 
   depends_on 'gsl' 
