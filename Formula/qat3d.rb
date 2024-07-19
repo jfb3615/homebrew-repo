@@ -16,10 +16,10 @@ class Qat3d < Formula
   conflicts_with "qat", :because => "qat3d is a superset of qat."
 
   def install
-    ENV.deparallelize  
-    system "mkdir ../lib"
-    system "qmake PREFIX=#{prefix} LIBS+=-L#{HOMEBREW_PREFIX}/lib INCLUDEPATH+=#{HOMEBREW_PREFIX}/include QAT3D=1 QMAKE_STRIP="
-    system "make", "install"
+     mkdir "builddir" do
+      system "cmake", "..", "-DCMAKE_CXX_STANDARD=17", *std_cmake_args       
+      system "make",      "install" 
+    end
   end  
   
   #bottle do
