@@ -12,7 +12,7 @@ class CoinBb < Formula
   def install
     mkdir "builddir" do
       system "which", "cmake"
-      system "cmake", "..", "-DCOIN_BUILD_TESTS=0", "-DCMAKE_CXX_STANDARD=17", *std_cmake_args, "-DCMAKE_FIND_FRAMEWORK=NEVER"       
+      system "cmake", "..", "-DCOIN_BUILD_TESTS=0", "-DCMAKE_CXX_STANDARD=17", *std_cmake_args, "-DCMAKE_FIND_FRAMEWORK=\"\""       
       system "make",      "install" 
     end
   end
