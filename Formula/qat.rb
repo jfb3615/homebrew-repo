@@ -14,6 +14,8 @@ class Qat < Formula
 
 
   def install
+    system "pwd"
+    system "ls"
     mkdir "qat/build" do
 #      system "cmake", "-G", "Unix Makefiles", "..", *std_cmake_args
       system "cmake", ".."
