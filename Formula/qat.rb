@@ -11,14 +11,10 @@ class Qat < Formula
   depends_on 'openmpi' 
   depends_on 'coin3d'
   depends_on "cmake" => :build
-  conflicts_with "qat3d", :because => "qat is a subset of qat3d."
 
 
   def install
     mkdir "build" do
-      system "pwd"
-      system "cat",   "../CMakeLists.txt"
-      system "which", "cmake"
       system "cmake", "..", *std_cmake_args
       system "make"
       system "make", "install"
