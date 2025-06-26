@@ -1,7 +1,7 @@
 class Qat < Formula
   desc "The QAT Package for computation in the physical sciences"
   homepage "qat.pitt.edu"
-  url "https://github.com/jfb3615/qat/archive/refs/tags/6.0.0.tar.gz"
+  url "https://github.com/jfb3615/qat/archive/refs/tags/6.0.1.tar.gz"
   sha256 "894c3ff76d655658e8ca64e9268b3d39f9bf289e69330aa060bcaf83005bf0c0"
   depends_on 'qt' 
   depends_on 'eigen' 
