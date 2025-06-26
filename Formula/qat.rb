@@ -19,7 +19,7 @@ class Qat < Formula
       system "pwd"
       system "cat",   "../CMakeLists.txt"
       system "which", "cmake"
-      system "/opt/homebrew/bin/cmake ..", *std_cmake_args
+      system "cmake", ..", *std_cmake_args
       system "make"
       system "make", "install"
     end    
