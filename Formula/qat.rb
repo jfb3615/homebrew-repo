@@ -9,7 +9,7 @@ class Qat < Formula
   depends_on 'hdf5' 
   depends_on 'pkg-config' 
   depends_on 'openmpi' 
-  #needs :cxx11 
+  depends_on "cmake" => :build
   conflicts_with "qat3d", :because => "qat is a subset of qat3d."
 
 
