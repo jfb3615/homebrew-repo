@@ -15,8 +15,7 @@ class Qat < Formula
 
   def install
     mkdir "build" do
-#      system "cmake", "-G", "Unix Makefiles", "..", *std_cmake_args
-      system "cmake", ".."
+      system "cmake", "-G", "Unix Makefiles", "..", *std_cmake_args
       system "make"
       system "make", "install"
     end    
