@@ -14,10 +14,11 @@ class Qat < Formula
 
 
   def install
-    ENV.deparallelize  
-    system "mkdir ../lib"
-    system "qmake PREFIX=#{prefix} QMAKE_STRIP="
-    system "make", "install"
+    mkdir "qat/build" do
+      system "cmake", "-G", "Unix Makefiles", "..", *std_cmake_args
+      system "make"
+      system "make", "install"
+    end    
   end
  
 #  bottle do
