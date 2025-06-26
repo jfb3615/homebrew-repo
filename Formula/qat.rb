@@ -17,6 +17,7 @@ class Qat < Formula
     mkdir "build" do
       system "pwd"
       system "cat",   "../CMakeLists.txt"
+      system "which", "cmake"
       system "cmake ..", *std_cmake_args
       system "make"
       system "make", "install"
