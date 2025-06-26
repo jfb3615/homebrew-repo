@@ -46,8 +46,8 @@ class Coin3d < Formula
   end
 
   def install
-    system "sed", "-i", ".bck", "s/3.0/3.5/g", "CMakeLists.txt"
-    system "sed", "-i", ".bck", "s/2.8.12/3.5/g", "src/coin-config.cmake.in"
+    system "sed", "-i", ".bck", "s/3.0/3.10/g", "CMakeLists.txt"
+    system "sed", "-i", ".bck", "s/2.8.12/3.10/g", "src/coin-config.cmake.in"
     system "ls"
     system "cat", "coin.cfg.in"
     system "cat", "coin.cfg.cmake.in"
@@ -62,7 +62,7 @@ class Coin3d < Formula
 
     resource("soqt").stage do
       system "cat", "CMakeLists.txt"
-      system "sed", "-i", ".bck", "s/3.0/3.5/g", "CMakeLists.txt"
+      system "sed", "-i", ".bck", "s/3.0/3.10/g", "CMakeLists.txt"
       system "cmake", "-S", ".", "-B", "_build",
                       "-DCMAKE_INSTALL_RPATH=#{rpath}",
                       "-DSOQT_BUILD_MAC_FRAMEWORK=OFF",
