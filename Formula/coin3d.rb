@@ -38,7 +38,7 @@ class Coin3d < Formula
   depends_on "boost" => :build
   depends_on "cmake" => :build
   depends_on "doxygen" => :build
-  depends_on "qtbase"
+  depends_on "jfb3615/repo/qt"
 
   uses_from_macos "expat"
 
