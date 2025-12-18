@@ -18,14 +18,14 @@ class Coin3d < Formula
     strategy :github_latest
   end
 
-  bottle do
-    sha256 cellar: :any,                 arm64_tahoe:   "40a953c5da778240ee206304efd942c4c6417e30520700ac37f54b17840d9559"
-    sha256 cellar: :any,                 arm64_sequoia: "f97cbf252a50387b2589db4f56bc474c45235095a017bcb1afd033e09c1f7c23"
-    sha256 cellar: :any,                 arm64_sonoma:  "a516f84b868ed0911b2d7ca6d3bbc29252501955a146147c8cad25f2914aced7"
-    sha256 cellar: :any,                 sonoma:        "758e7e7da2579c5462b5beff4370099d7d640d513c4ba2688b3a9d539b29270d"
-    sha256 cellar: :any_skip_relocation, arm64_linux:   "8857329b9b978a804adfa800124678ae573b981cd815f31a8017cf3d1c5fa6ef"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "a0f975512d3180a87c61ed8c5fb7b4a49c95065239a5379779261e98dd749f5d"
-  end
+  #bottle do
+  #  sha256 cellar: :any,                 arm64_tahoe:   "40a953c5da778240ee206304efd942c4c6417e30520700ac37f54b17840d9559"
+  #  sha256 cellar: :any,                 arm64_sequoia: "f97cbf252a50387b2589db4f56bc474c45235095a017bcb1afd033e09c1f7c23"
+  #  sha256 cellar: :any,                 arm64_sonoma:  "a516f84b868ed0911b2d7ca6d3bbc29252501955a146147c8cad25f2914aced7"
+  #  sha256 cellar: :any,                 sonoma:        "758e7e7da2579c5462b5beff4370099d7d640d513c4ba2688b3a9d539b29270d"
+  #  sha256 cellar: :any_skip_relocation, arm64_linux:   "8857329b9b978a804adfa800124678ae573b981cd815f31a8017cf3d1c5fa6ef"
+  #  sha256 cellar: :any_skip_relocation, x86_64_linux:  "a0f975512d3180a87c61ed8c5fb7b4a49c95065239a5379779261e98dd749f5d"
+  #end
 
   head do
     url "https://github.com/coin3d/coin.git", branch: "master"
