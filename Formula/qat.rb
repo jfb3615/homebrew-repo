@@ -9,7 +9,7 @@ class Qat < Formula
   depends_on 'hdf5' 
   depends_on 'pkg-config' 
   depends_on 'openmpi' 
-  depends_on 'jfb3615/repo/coin3d'
+  depends_on 'coin3d'
   depends_on "cmake" => :build
 
 
