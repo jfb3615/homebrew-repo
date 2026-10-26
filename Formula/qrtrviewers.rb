@@ -1,7 +1,7 @@
 #
 # QrtrViewers library Joseph Boudreau 2026
 #
-class QrtrViewers < Formula
+class Qrtrviewers < Formula
   desc "QrtrViewers contains the QuarterExaminerViewer, providing display of Inventor/Coin3d scenegraph with interactive control, similear to the historical SoXtExaminerViewer or the SoQtExaminerViewer from SoQt"
   homepage "https://github.com/jfb3615/QrtrViewers"
   url "https://launchpad.net/~kaktusjoe/+archive/ubuntu/coingraphics/+sourcefiles/qrtrviewers/1.0.0-ubuntu5/qrtrviewers_1.0.0.orig.tar.gz"
